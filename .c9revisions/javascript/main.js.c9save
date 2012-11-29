@@ -1,0 +1,49 @@
+{"ts":1354214559743,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1354214654345,"patch":[[{"diffs":[[1,"//"]],"start1":0,"start2":0,"length1":0,"length2":2}]],"length":2,"saved":false}
+{"ts":1354214655471,"patch":[[{"diffs":[[0,"//"],[1,"Add"]],"start1":0,"start2":0,"length1":2,"length2":5}]],"length":5,"saved":false}
+{"ts":1354214657044,"patch":[[{"diffs":[[0,"//Add"],[1," Re"]],"start1":0,"start2":0,"length1":5,"length2":8}]],"length":8,"saved":false}
+{"ts":1354214659762,"patch":[[{"diffs":[[0,"//Add Re"],[1,"quired"]],"start1":0,"start2":0,"length1":8,"length2":14}]],"length":14,"saved":false}
+{"ts":1354214663454,"patch":[[{"diffs":[[0,"Add "],[-1,"Required"]],"start1":2,"start2":2,"length1":12,"length2":4}]],"length":6,"saved":false}
+{"ts":1354214664804,"patch":[[{"diffs":[[0,"//Add "],[1,"Addi"]],"start1":0,"start2":0,"length1":6,"length2":10}]],"length":10,"saved":false}
+{"ts":1354214666077,"patch":[[{"diffs":[[0,"Add Addi"],[1,"tiona"]],"start1":2,"start2":2,"length1":8,"length2":13}]],"length":15,"saved":false}
+{"ts":1354214667049,"patch":[[{"diffs":[[0,"dditiona"],[1,"l "]],"start1":7,"start2":7,"length1":8,"length2":10}]],"length":17,"saved":false}
+{"ts":1354214668313,"patch":[[{"diffs":[[0,"itional "],[1,"S"]],"start1":9,"start2":9,"length1":8,"length2":9}]],"length":18,"saved":false}
+{"ts":1354214671422,"patch":[[{"diffs":[[0,"nal "],[-1,"S"],[1,"API "]],"start1":13,"start2":13,"length1":5,"length2":8}]],"length":21,"saved":false}
+{"ts":1354214673269,"patch":[[{"diffs":[[0,"nal "],[-1,"API "]],"start1":13,"start2":13,"length1":8,"length2":4}]],"length":17,"saved":false}
+{"ts":1354214676247,"patch":[[{"diffs":[[0,"itional "],[1,"Esr"]],"start1":9,"start2":9,"length1":8,"length2":11}]],"length":20,"saved":false}
+{"ts":1354214677733,"patch":[[{"diffs":[[0,"onal Esr"],[1,"i A"]],"start1":12,"start2":12,"length1":8,"length2":11}]],"length":23,"saved":false}
+{"ts":1354214678461,"patch":[[{"diffs":[[0,"l Esri A"],[1,"P"]],"start1":15,"start2":15,"length1":8,"length2":9}]],"length":24,"saved":false}
+{"ts":1354214681252,"patch":[[{"diffs":[[0," Esri AP"],[1,"I Scripts"]],"start1":16,"start2":16,"length1":8,"length2":17}]],"length":33,"saved":false}
+{"ts":1354214682305,"patch":[[{"diffs":[[0," Scripts"],[1,"\n"]],"start1":25,"start2":25,"length1":8,"length2":9}]],"length":34,"saved":false}
+{"ts":1354214695657,"patch":[[{"diffs":[[0,"Scripts\n"],[1,"dojo.require(\"esri.map\");"]],"start1":26,"start2":26,"length1":8,"length2":33}]],"length":59,"saved":false}
+{"ts":1354214697073,"patch":[[{"diffs":[[0,"i.map\");"],[1,"\n"]],"start1":51,"start2":51,"length1":8,"length2":9}]],"length":60,"saved":false}
+{"ts":1354214758483,"patch":[[{"diffs":[[0,".map\");\n"],[1,"\n  dojo.require(\"esri.layout\");\n  dojo.require(\"esri.widgets\");\n  dojo.require(\"esri.arcgis.utils\");"]],"start1":52,"start2":52,"length1":8,"length2":108}]],"length":160,"saved":false}
+{"ts":1354214762200,"patch":[[{"diffs":[[0,".map\");\n"],[-1,"\n  "],[0,"dojo.req"]],"start1":52,"start2":52,"length1":19,"length2":16}]],"length":157,"saved":false}
+{"ts":1354214764402,"patch":[[{"diffs":[[0,"i.layout\");\n"],[-1,"  "],[0,"dojo.require"]],"start1":77,"start2":77,"length1":26,"length2":24}]],"length":155,"saved":false}
+{"ts":1354214766300,"patch":[[{"diffs":[[0,"\");\n"],[-1,"  "],[0,"dojo"]],"start1":115,"start2":115,"length1":10,"length2":8}]],"length":153,"saved":false}
+{"ts":1354214785719,"patch":[[{"diffs":[[0,"gis.utils\");"],[1,"\n\n"]],"start1":141,"start2":141,"length1":12,"length2":14}]],"length":155,"saved":false}
+{"ts":1354214787362,"patch":[[{"diffs":[[0,"ils\");\n\n"],[1,"window"]],"start1":147,"start2":147,"length1":8,"length2":14}]],"length":161,"saved":false}
+{"ts":1354214788108,"patch":[[{"diffs":[[0,"\n\nwindow"],[1,"."]],"start1":153,"start2":153,"length1":8,"length2":9}]],"length":162,"saved":false}
+{"ts":1354214788781,"patch":[[{"diffs":[[0,"\nwindow."],[1,"ap"]],"start1":154,"start2":154,"length1":8,"length2":10}]],"length":164,"saved":false}
+{"ts":1354214789474,"patch":[[{"diffs":[[0,"window.a"],[-1,"p"]],"start1":155,"start2":155,"length1":9,"length2":8}]],"length":163,"saved":false}
+{"ts":1354214790438,"patch":[[{"diffs":[[0,"\nwindow."],[-1,"a"]],"start1":154,"start2":154,"length1":9,"length2":8}]],"length":162,"saved":false}
+{"ts":1354214792265,"patch":[[{"diffs":[[0,"\nwindow."],[1,"test"]],"start1":154,"start2":154,"length1":8,"length2":12}]],"length":166,"saved":false}
+{"ts":1354214793313,"patch":[[{"diffs":[[0,"dow.test"],[1," = "]],"start1":158,"start2":158,"length1":8,"length2":11}]],"length":169,"saved":false}
+{"ts":1354214795565,"patch":[[{"diffs":[[0,".test = "],[1,"function()"]],"start1":161,"start2":161,"length1":8,"length2":18}]],"length":179,"saved":false}
+{"ts":1354214796198,"patch":[[{"diffs":[[0,"nction()"],[1,"{"]],"start1":171,"start2":171,"length1":8,"length2":9}]],"length":180,"saved":false}
+{"ts":1354214798690,"patch":[[{"diffs":[[0,"ction(){"],[1,"alert"]],"start1":172,"start2":172,"length1":8,"length2":13}]],"length":185,"saved":false}
+{"ts":1354214799335,"patch":[[{"diffs":[[0,"(){alert"],[1,"()"]],"start1":177,"start2":177,"length1":8,"length2":10}]],"length":187,"saved":false}
+{"ts":1354214799994,"patch":[[{"diffs":[[0,"){alert("],[1,"\"\""],[0,")"]],"start1":178,"start2":178,"length1":9,"length2":11}]],"length":189,"saved":false}
+{"ts":1354214801118,"patch":[[{"diffs":[[0,"{alert(\""],[1,"test"],[0,"\")"]],"start1":179,"start2":179,"length1":10,"length2":14}]],"length":193,"saved":false}
+{"ts":1354214804789,"patch":[[{"diffs":[[0,"(\"test\")"],[1,"});"]],"start1":185,"start2":185,"length1":8,"length2":11}]],"length":196,"saved":false}
+{"ts":1354214818136,"patch":[[{"diffs":[[0,"ction(){"],[1,"\n    "],[0,"alert(\"t"]],"start1":172,"start2":172,"length1":16,"length2":21}]],"length":201,"saved":false}
+{"ts":1354214820418,"patch":[[{"diffs":[[0,"(\"test\")"],[1,"\n    \n    "],[0,"});"]],"start1":190,"start2":190,"length1":11,"length2":21}]],"length":211,"saved":false}
+{"ts":1354214822218,"patch":[[{"diffs":[[0,"\")\n    \n"],[-1,"    "],[0,"});"]],"start1":196,"start2":196,"length1":15,"length2":11}]],"length":207,"saved":false}
+{"ts":1354214823770,"patch":[[{"diffs":[[0,"(\"test\")"],[1,";"],[0,"\n    \n})"]],"start1":190,"start2":190,"length1":16,"length2":17}]],"length":208,"saved":false}
+{"ts":1354214825978,"patch":[[{"diffs":[[0,"\"test\");"],[-1,"\n"],[0,"    \n});"]],"start1":191,"start2":191,"length1":17,"length2":16}]],"length":207,"saved":false}
+{"ts":1354214830328,"patch":[[{"diffs":[[0,");    \n}"],[-1,")"],[0,";"]],"start1":197,"start2":197,"length1":10,"length2":9}]],"length":206,"saved":false}
+{"ts":1354214832041,"patch":[[{"diffs":[[0,"\"test\");"],[-1,"    "],[0,"\n};"]],"start1":191,"start2":191,"length1":15,"length2":11}]],"length":202,"saved":false}
+{"ts":1354215004621,"patch":[[{"diffs":[[0,"esri.map\");\n"],[1,"  "],[0,"dojo.require"]],"start1":48,"start2":48,"length1":24,"length2":26},{"diffs":[[0,"re(\""],[-1,"esri"],[1,"dijit"],[0,".layout"],[1,".BorderContainer"],[0,"\");\n"],[1,"  "],[0,"dojo"]],"start1":72,"start2":72,"length1":23,"length2":42},{"diffs":[[0,"re(\""],[-1,"esri.widgets"],[1,"dijit.layout.ContentPane"],[0,"\");\n"]],"start1":120,"start2":120,"length1":20,"length2":32}]],"length":235,"saved":false}
+{"ts":1354215007819,"patch":[[{"diffs":[[0,"esri.map\");\n"],[-1,"  "],[0,"dojo.require"]],"start1":48,"start2":48,"length1":26,"length2":24}]],"length":233,"saved":false}
+{"ts":1354215009433,"patch":[[{"diffs":[[0,"iner\");\n"],[-1,"  "],[0,"dojo.req"]],"start1":98,"start2":98,"length1":18,"length2":16}]],"length":231,"saved":false}
+{"ts":1354215052360,"patch":[[{"diffs":[[0,"s\");"],[-1,"\n\nwindow.test = function(){\n    alert(\"test\");\n};"]],"start1":178,"start2":178,"length1":53,"length2":4}]],"length":182,"saved":false}

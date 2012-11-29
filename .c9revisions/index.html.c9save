@@ -1,0 +1,68 @@
+{"ts":1354211604245,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1354211770527,"patch":[[{"diffs":[[1,"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n<html>\r\n<head>\r\n<title>Title of the document</title>\r\n<link href=\"/css/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\r\n  <link href=\"/css/print.css\" media=\"print\" rel=\"stylesheet\" type=\"text/css\" />\r\n  <!--[if IE]>\r\n      <link href=\"/css/ie.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\r\n  <![endif]-->\r\n</head>\r\n\r\n<body>\r\nThe content of the document......\r\n</body>\r\n\r\n</html>"]],"start1":0,"start2":0,"length1":0,"length2":531}]],"length":531,"saved":false}
+{"ts":1354211779066,"patch":[[{"diffs":[[0,"<link href=\""],[-1,"/"],[0,"css/screen.c"]],"start1":158,"start2":158,"length1":25,"length2":24}]],"length":530,"saved":false}
+{"ts":1354211780362,"patch":[[{"diffs":[[0,"<link href=\""],[-1,"/"],[0,"css/print.cs"]],"start1":252,"start2":252,"length1":25,"length2":24}]],"length":529,"saved":false}
+{"ts":1354211781312,"patch":[[{"diffs":[[0,"k href=\""],[-1,"/"],[0,"css/ie.c"]],"start1":356,"start2":356,"length1":17,"length2":16}]],"length":528,"saved":false}
+{"ts":1354211784299,"patch":[[{"diffs":[[0,"y>\r\n"],[-1,"The content of the document......\r\n"],[0,"</bo"]],"start1":471,"start2":471,"length1":43,"length2":8}]],"length":493,"saved":false}
+{"ts":1354211787902,"patch":[[{"diffs":[[0,"<html>\r\n"],[1,"  "],[0,"<head>\r\n"]],"start1":104,"start2":104,"length1":16,"length2":18}]],"length":495,"saved":false}
+{"ts":1354211789602,"patch":[[{"diffs":[[0,"<head>\r\n"],[1,"    "],[0,"<title>T"]],"start1":114,"start2":114,"length1":16,"length2":20}]],"length":499,"saved":false}
+{"ts":1354211791739,"patch":[[{"diffs":[[0,"title>\r\n"],[1,"    "],[0,"<link hr"]],"start1":156,"start2":156,"length1":16,"length2":20}]],"length":503,"saved":false}
+{"ts":1354211792900,"patch":[[{"diffs":[[0,"ss\" />\r\n"],[1,"  "],[0,"  <link "]],"start1":252,"start2":252,"length1":16,"length2":18}]],"length":505,"saved":false}
+{"ts":1354211794692,"patch":[[{"diffs":[[0,"xt/css\" />\r\n"],[1,"  "],[0,"  <!--[if IE"]],"start1":330,"start2":330,"length1":24,"length2":26}]],"length":507,"saved":false}
+{"ts":1354211798842,"patch":[[{"diffs":[[0,"ss\" />\r\n"],[1,"  "],[0,"  <![end"]],"start1":446,"start2":446,"length1":16,"length2":18}]],"length":509,"saved":false}
+{"ts":1354211803689,"patch":[[{"diffs":[[0,"if]-->\r\n"],[1,"  "],[0,"</head>\r"]],"start1":464,"start2":464,"length1":16,"length2":18}]],"length":511,"saved":false}
+{"ts":1354211805603,"patch":[[{"diffs":[[0,"ead>\r\n\r\n"],[1,"  "],[0,"<body>\r\n"]],"start1":477,"start2":477,"length1":16,"length2":18}]],"length":513,"saved":false}
+{"ts":1354211806878,"patch":[[{"diffs":[[0,"<body>\r\n"],[1,"  "],[0,"</body>\r"]],"start1":487,"start2":487,"length1":16,"length2":18}]],"length":515,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1354214399814,"patch":[[{"diffs":[[0,"title>\r\n"],[1,"    <link href=\"http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/dojo/dijit/themes/claro/claro.css\" rel=\"stylesheet\" type=\"text/css\" >\r\n<link rel=\"stylesheet\" href=\"http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/esri/css/esri.css\" />\r\n<script src=\"http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2\" type=\"text/javascript\"></script>\r\n"],[0,"    <lin"]],"start1":156,"start2":156,"length1":16,"length2":365}]],"length":864,"saved":false}
+{"ts":1354214420212,"patch":[[{"diffs":[[0,"css\" >\r\n"],[1,"    "],[0,"<link re"]],"start1":297,"start2":297,"length1":16,"length2":20}]],"length":868,"saved":false}
+{"ts":1354214423118,"patch":[[{"diffs":[[0,"/>\r\n"],[-1,"<script src=\"http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2\" type=\"text/javascript\"></script>\r\n"],[0,"    "]],"start1":411,"start2":411,"length1":110,"length2":8}]],"length":766,"saved":false}
+{"ts":1354214427299,"patch":[[{"diffs":[[0,"if]-->\r\n"],[1,"    \r\n    \r\n"],[0,"  </head"]],"start1":715,"start2":715,"length1":16,"length2":28}]],"length":778,"saved":false}
+{"ts":1354214428913,"patch":[[{"diffs":[[0,"\r\n    \r\n"],[1,"<script src=\"http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2\" type=\"text/javascript\"></script>\r\n"],[0,"  </head"]],"start1":727,"start2":727,"length1":16,"length2":118}]],"length":880,"saved":false}
+{"ts":1354214432526,"patch":[[{"diffs":[[0,"\r\n    \r\n"],[1,"    "],[0,"<script "]],"start1":727,"start2":727,"length1":16,"length2":20}]],"length":884,"saved":false}
+{"ts":1354214436609,"patch":[[{"diffs":[[0,"title>\r\n"],[1,"    \r\n"],[0,"    <lin"]],"start1":156,"start2":156,"length1":16,"length2":22}]],"length":890,"saved":false}
+{"ts":1354214444972,"patch":[[{"diffs":[[0,"tle>\r\n    \r\n"],[1,"    \r\n"],[0,"    <link hr"]],"start1":158,"start2":158,"length1":24,"length2":30}]],"length":896,"saved":false}
+{"ts":1354214446877,"patch":[[{"diffs":[[0,"\r\n    \r\n    "],[1,"<!--"],[0,"\r\n    <link "]],"start1":162,"start2":162,"length1":24,"length2":28}]],"length":900,"saved":false}
+{"ts":1354214448341,"patch":[[{"diffs":[[0,"    <!--"],[1,"CSS"],[0,"\r\n    <l"]],"start1":170,"start2":170,"length1":16,"length2":19}]],"length":903,"saved":false}
+{"ts":1354214451797,"patch":[[{"diffs":[[0,"<!--"],[-1,"CSS"],[1,"STYLE"],[0,"\r\n  "]],"start1":174,"start2":174,"length1":11,"length2":13}]],"length":905,"saved":false}
+{"ts":1354214454273,"patch":[[{"diffs":[[0,"!--STYLE"],[1,"SHEETS"],[0,"\r\n    <l"]],"start1":175,"start2":175,"length1":16,"length2":22}]],"length":911,"saved":false}
+{"ts":1354214455266,"patch":[[{"diffs":[[0,"LESHEETS"],[1,"-->"],[0,"\r\n    <l"]],"start1":181,"start2":181,"length1":16,"length2":19}]],"length":914,"saved":false}
+{"ts":1354214462135,"patch":[[{"diffs":[[0,"[endif]-->\r\n"],[1,"    <!--STYLESHEETS-->\r\n"],[0,"    \r\n    \r\n"]],"start1":741,"start2":741,"length1":24,"length2":48}]],"length":938,"saved":false}
+{"ts":1354214464802,"patch":[[{"diffs":[[0," <!--STYLESHEETS"],[1," E"],[0,"-->\r\n    \r\n    \r"]],"start1":756,"start2":756,"length1":32,"length2":34}]],"length":940,"saved":false}
+{"ts":1354214465796,"patch":[[{"diffs":[[0,"SHEETS E"],[1,"ND"],[0,"-->\r\n   "]],"start1":766,"start2":766,"length1":16,"length2":18}]],"length":942,"saved":false}
+{"ts":1354214476326,"patch":[[{"diffs":[[0,"cript>\r\n"],[1,"    \r\n"],[0,"  </head"]],"start1":891,"start2":891,"length1":16,"length2":22}]],"length":948,"saved":false}
+{"ts":1354214477544,"patch":[[{"diffs":[[0,"S END-->"],[-1,"\r\n"],[0,"    \r\n  "]],"start1":771,"start2":771,"length1":18,"length2":16}]],"length":946,"saved":false}
+{"ts":1354214717480,"patch":[[{"diffs":[[0,">\r\n     "],[-1," "],[0,"<link hr"]],"start1":638,"start2":638,"length1":17,"length2":16}]],"length":945,"saved":false}
+{"ts":1354214718330,"patch":[[{"diffs":[[0," IE]>\r\n     "],[1," "],[0,"<link href=\""]],"start1":634,"start2":634,"length1":24,"length2":25}]],"length":946,"saved":false}
+{"ts":1354214871048,"patch":[[{"diffs":[[0,"cript>\r\n"],[1,"    <script src=\"http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2\" type=\"text/javascript\"></script>\r\n"],[0,"    \r\n  "]],"start1":889,"start2":889,"length1":16,"length2":122}]],"length":1052,"saved":false}
+{"ts":1354214883049,"patch":[[{"diffs":[[0,"rc=\""],[-1,"http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2"],[1,"jave"],[0,"\" ty"]],"start1":910,"start2":910,"length1":61,"length2":12}]],"length":1003,"saved":false}
+{"ts":1354214883982,"patch":[[{"diffs":[[0,"src=\"jav"],[-1,"e"],[1,"asc"],[0,"\" type=\""]],"start1":909,"start2":909,"length1":17,"length2":19}]],"length":1005,"saved":false}
+{"ts":1354214885436,"patch":[[{"diffs":[[0,"=\"javasc"],[1,"ript"],[0,"\" type=\""]],"start1":912,"start2":912,"length1":16,"length2":20}]],"length":1009,"saved":false}
+{"ts":1354214886820,"patch":[[{"diffs":[[0,"vascript"],[1,"/te"],[0,"\" type=\""]],"start1":916,"start2":916,"length1":16,"length2":19}]],"length":1012,"saved":false}
+{"ts":1354214888888,"patch":[[{"diffs":[[0,"ascript/"],[-1,"te"],[1,"main."],[0,"\" type=\""]],"start1":917,"start2":917,"length1":18,"length2":21}]],"length":1015,"saved":false}
+{"ts":1354214889818,"patch":[[{"diffs":[[0,"pt/main."],[1,"js"],[0,"\" type=\""]],"start1":922,"start2":922,"length1":16,"length2":18}]],"length":1017,"saved":false}
+{"ts":1354214890217,"patch":[[{"diffs":[[0,"title>\r\n"],[-1,"    "],[0,"\r\n    <!"]],"start1":156,"start2":156,"length1":20,"length2":16},{"diffs":[[0,"S END-->"],[-1,"    \r\n    "],[1,"\r\n"],[0,"\r\n    <s"]],"start1":767,"start2":767,"length1":26,"length2":18},{"diffs":[[0,"cript>\r\n"],[-1,"    "],[0,"\r\n  </he"]],"start1":948,"start2":948,"length1":20,"length2":16}]],"length":1001,"saved":false}
+{"ts":1354215079516,"patch":[[{"diffs":[[0,"\n  <body"],[1," class="],[0,">\r\n  </b"]],"start1":970,"start2":970,"length1":16,"length2":23}]],"length":1008,"saved":false}
+{"ts":1354215080506,"patch":[[{"diffs":[[0,"y class="],[1,"\""],[0,">\r\n  </b"]],"start1":977,"start2":977,"length1":16,"length2":17}]],"length":1009,"saved":false}
+{"ts":1354215081721,"patch":[[{"diffs":[[0," class=\""],[1,"clar"],[0,">\r\n  </b"]],"start1":978,"start2":978,"length1":16,"length2":20}]],"length":1013,"saved":false}
+{"ts":1354215082983,"patch":[[{"diffs":[[0,"ss=\"clar"],[1,"o"],[0,">\r\n  </b"]],"start1":982,"start2":982,"length1":16,"length2":17}]],"length":1014,"saved":false}
+{"ts":1354215083965,"patch":[[{"diffs":[[0,"s=\"claro"],[1,"\""],[0,">\r\n  </b"]],"start1":983,"start2":983,"length1":16,"length2":17}]],"length":1015,"saved":false}
+{"ts":1354215177482,"patch":[[{"diffs":[[0,"laro\">\r\n"],[1,"  \r\n"],[0,"  </body"]],"start1":987,"start2":987,"length1":16,"length2":20}]],"length":1019,"saved":false}
+{"ts":1354215178464,"patch":[[{"diffs":[[0,"ro\">\r\n  "],[1,"  "],[0,"\r\n  </bo"]],"start1":989,"start2":989,"length1":16,"length2":18}]],"length":1021,"saved":false}
+{"ts":1354215208339,"patch":[[{"diffs":[[0,"\">\r\n    "],[1,"<div id=\"mainWindow\" dojotype=\"dijit.layout.BorderContainer\" design=\"headline\"\r\n        gutters=\"false\" style=\"width:100%; height:100%;\">"],[0,"\r\n  </bo"]],"start1":991,"start2":991,"length1":16,"length2":153}]],"length":1158,"saved":false}
+{"ts":1354215211407,"patch":[[{"diffs":[[0,"ine\""],[-1,"\r\n        "],[0,"gutt"]],"start1":1073,"start2":1073,"length1":18,"length2":8}]],"length":1148,"saved":false}
+{"ts":1354215212272,"patch":[[{"diffs":[[0,"eadline\""],[1," "],[0,"gutters="]],"start1":1069,"start2":1069,"length1":16,"length2":17}]],"length":1149,"saved":false}
+{"ts":1354215214932,"patch":[[{"diffs":[[0,"00%;\">\r\n"],[1,"    <\r\n"],[0,"  </body"]],"start1":1121,"start2":1121,"length1":16,"length2":23}]],"length":1156,"saved":false}
+{"ts":1354215215926,"patch":[[{"diffs":[[0,">\r\n    <"],[1,"/"],[0,"\r\n  </bo"]],"start1":1126,"start2":1126,"length1":16,"length2":17}]],"length":1157,"saved":false}
+{"ts":1354215217823,"patch":[[{"diffs":[[0,"\r\n    </"],[1,"div"],[0,"\r\n  </bo"]],"start1":1127,"start2":1127,"length1":16,"length2":19}]],"length":1160,"saved":false}
+{"ts":1354215220627,"patch":[[{"diffs":[[0,"   </div"],[1,">M"],[0,"\r\n  </bo"]],"start1":1130,"start2":1130,"length1":16,"length2":18}]],"length":1162,"saved":false}
+{"ts":1354215221747,"patch":[[{"diffs":[[0," </div>M"],[1,"!"],[0,"\r\n  </bo"]],"start1":1132,"start2":1132,"length1":16,"length2":17}]],"length":1163,"saved":false}
+{"ts":1354215222803,"patch":[[{"diffs":[[0,"div>"],[-1,"M!"],[1,"<"],[0,"\r\n  "]],"start1":1135,"start2":1135,"length1":10,"length2":9}]],"length":1162,"saved":false}
+{"ts":1354215223464,"patch":[[{"diffs":[[0," </div><"],[1,"!"],[0,"\r\n  </bo"]],"start1":1132,"start2":1132,"length1":16,"length2":17}]],"length":1163,"saved":false}
+{"ts":1354215224562,"patch":[[{"diffs":[[0,"</div><!"],[1,"--ma"],[0,"\r\n  </bo"]],"start1":1133,"start2":1133,"length1":16,"length2":20}]],"length":1167,"saved":false}
+{"ts":1354215225449,"patch":[[{"diffs":[[0,"v><!--ma"],[1,"inW"],[0,"\r\n  </bo"]],"start1":1137,"start2":1137,"length1":16,"length2":19}]],"length":1170,"saved":false}
+{"ts":1354215226738,"patch":[[{"diffs":[[0,"!--mainW"],[1,"inde"],[0,"\r\n  </bo"]],"start1":1140,"start2":1140,"length1":16,"length2":20}]],"length":1174,"saved":false}
+{"ts":1354215228359,"patch":[[{"diffs":[[0,"mainWind"],[-1,"e"],[1,"ow"],[0,"\r\n  </bo"]],"start1":1143,"start2":1143,"length1":17,"length2":18}]],"length":1175,"saved":false}
+{"ts":1354215229757,"patch":[[{"diffs":[[0,"inWindow"],[1,"-->"],[0,"\r\n  </bo"]],"start1":1145,"start2":1145,"length1":16,"length2":19}]],"length":1178,"saved":false}
+{"ts":1354215238827,"patch":[[{"diffs":[[0,"lse\""],[-1," style=\"width:100%; height:100%;"],[0,"\">\r\n"]],"start1":1089,"start2":1089,"length1":40,"length2":8}]],"length":1146,"saved":false}
+{"ts":1354215240062,"patch":[[{"diffs":[[0,"alse"],[-1,"\"\""],[0,">\r\n "]],"start1":1088,"start2":1088,"length1":10,"length2":8}]],"length":1144,"saved":false}
+{"ts":1354215244199,"patch":[[{"diffs":[[0,"s=\"false"],[1,"\""],[0,">\r\n    <"]],"start1":1084,"start2":1084,"length1":16,"length2":17}]],"length":1145,"saved":false}
