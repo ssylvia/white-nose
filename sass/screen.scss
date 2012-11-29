@@ -3,5 +3,61 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+//Imports
 @import "compass/reset";
+@import "compass/typography/text/ellipsis";
 
+//Color Variables
+$dark-background:#444444;
+$light-background:#ffffff;
+$text-dark:#444444;
+$text-mid:#dadada;
+$text-light:#ffffff;
+
+//Fonts
+$serif:Georgia, "Times New Roman", Times, serif;
+$san-serif:Arial, Helvetica, sans-serif;
+
+#mainWindow{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  font:{
+    family:$serif;
+  }
+}
+
+#banner{
+  width:100%;
+  height:115px;
+  background:{
+    color:$dark-background;
+  }
+}
+
+#title{
+  color:$text-light;
+  font:{
+    family:$san-serif;
+    size:1.6em;
+  }
+  margin:25px 25px 10px 25px;
+  @include ellipsis(true);
+}
+
+#subtitle{
+  color:$text-mid;
+  font:{
+    size:1em;
+  }
+  margin:0 25px 0 25px;
+}
+
+#sidePanel{
+  background:{
+    color:$light-background;
+  }
+  width:350px;
+  height:100%;
+}
