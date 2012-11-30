@@ -26,25 +26,59 @@
     <script src="javascript/appData.js" type="text/javascript"></script>
     <script src="javascript/main.js" type="text/javascript"></script>
 
+    <!--Social Media Links-->
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+      stLight.options({publisher: "77225c91-2742-42f7-b1b4-bddda99a9bde"});
+    </script>
+    <!--END Social Media Links-->
+    <!--Google Analytics Start-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26529417-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!--Google Analytics End-->
+
   </head>
 
   <body class="tundra">
 
     <div id="mainWindow" dojotype="dijit.layout.BorderContainer" design="headline" gutters="false">
 
+      <div id="tabs"><span id="tab1" class="tabs-active1"></span><span id="tab2" class="tabs-default2"></span></div>
+
       <div id="banner" dojotype="dijit.layout.BorderContainer" gutters="false" region="top">
-        <h1 id="title" class="titleText"></h1>
-        <h2 id="subtitle" class="titleText"></h2>
+        <div id="titlePane" dojotype="dijit.layout.ContentPane" region="center">
+          <h1 id="title" class="titleText"></h1>
+          <h2 id="subtitle" class="titleText"></h2>
+        </div><!--/titlePane-->
+        <div id="logoPane" dojotype="dijit.layout.ContentPane" region="right">
+          <div id="social">
+            <a id="smLink" href="http://storymaps.esri.com" target="_blank">A story map</a> <span  class='st_facebook' ></span><span  class='st_twitter' st_via='EsriStoryMaps'></span>
+          </div><!--/social-->
+          <div id="logo">
+            <a id="logoLink" href="http://www.esri.com" target="_blank"><img id="logoImg" src="images/esriGlobeLogow.png" alt="Esri - Home"></a>
+          </div><!--/logo-->
+        </div><!--/logoPane-->
       </div><!--/banner-->
 
       <div id="content" dojotype="dijit.layout.BorderContainer" gutters="false" region="center">
 
-        <div id="sidePanel" dojotype="dijit.layout.BorderContainer" gutters="false" region="left">
+        <div id="sidePane" dojotype="dijit.layout.BorderContainer" gutters="false" region="left">
         </div><!--/sidePanel-->
 
-        <div id="map" dojotype="dijit.layout.ContentPane" region="center">
-        </div><!--/map-->
-
+        <div id="mapContent" dojotype="dijit.layout.BorderContainer" gutters="false" region="center">
+          <div id="controlsPane" dojotype="dijit.layout.ContentPane" region="top">
+          </div><!--/map-->
+          <div id="map" dojotype="dijit.layout.ContentPane" region="center">
+          </div><!--/map-->
+        </div><!--/mapContent-->
       </div><!--/content-->
 
     </div><!--/mainWindow-->

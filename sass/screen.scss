@@ -7,8 +7,13 @@
 @import "compass/reset";
 @import "compass/typography/text/ellipsis";
 
+//Sprites
+@import "tabs/*.png";
+@include all-tabs-sprites;
+
 //Color Variables
 $dark-background:#444444;
+$mid-background:#949494;
 $light-background:#ffffff;
 $text-dark:#444444;
 $text-mid:#dadada;
@@ -26,6 +31,21 @@ $san-serif:Arial, Helvetica, sans-serif;
   font:{
     family:$serif;
   }
+}
+
+#tabs{
+  position:absolute;
+  z-index:100;
+}
+
+#tab1{
+  height:50px;
+  width:50px;
+}
+
+#tab2{
+  @extend #tab1;
+  margin-right:10px;
 }
 
 #banner{
@@ -54,10 +74,55 @@ $san-serif:Arial, Helvetica, sans-serif;
   margin:0 25px 0 25px;
 }
 
-#sidePanel{
+#logoPane{
+    height:100%;
+    width:230px;
+}
+
+#social{
+  margin:25px 25px 0 0;
+  float:right;
+}
+
+#smLink{
+  color:$text-light;
+  font:{
+    family:$san-serif;
+    size:0.8em;
+    weight:bold;
+  }
+  text:{
+    decoration:none;
+  }
+}
+
+#smLink:hover{
+  text:{
+    decoration:underline;
+  }
+}
+
+#logo{
+  margin:15px 25px 0 0;
+  float:right;
+  border:none;
+  outline:none;
+}
+
+
+#sidePane{
   background:{
     color:$light-background;
   }
   width:350px;
   height:100%;
 }
+
+#controlsPane{
+  background:{
+    color:$mid-background;
+  }
+  width:100%;
+  height:100px;
+}
+
