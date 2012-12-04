@@ -9,3 +9,4 @@
 {"ts":1354308033105,"patch":[[{"diffs":[[0,"_dir = \""],[1,"/"],[0,"sass\"\nim"]],"start1":141,"start2":141,"length1":16,"length2":17}]],"length":856,"saved":false}
 {"ts":1354308038876,"patch":[[{"diffs":[[0,"_dir = \""],[1,"/"],[0,"images\"\n"]],"start1":162,"start2":162,"length1":16,"length2":17}]],"length":857,"saved":false}
 {"ts":1354308041323,"patch":[[{"diffs":[[0,"_dir = \""],[1,"/"],[0,"javascri"]],"start1":190,"start2":190,"length1":16,"length2":17}]],"length":858,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1354309542621,"patch":[[{"diffs":[[0,"ascript\""],[1,"\nrelative_assets = true"],[0,"\n\n# You "]],"start1":202,"start2":202,"length1":16,"length2":39}]],"length":881,"saved":false}

@@ -16,7 +16,8 @@ $dark-background:#444444;
 $mid-background:#949494;
 $light-background:#ffffff;
 $text-dark:#444444;
-$text-mid:#dadada;
+$text-mid-dark:#666666;
+$text-mid-light:#dadada;
 $text-light:#ffffff;
 
 //Fonts
@@ -33,19 +34,35 @@ $san-serif:Arial, Helvetica, sans-serif;
   }
 }
 
-#tabs{
+.tabs{
   position:absolute;
   z-index:100;
+  height:50px;
+  width:50px;
+  top:90px;
+  cursor:pointer;
 }
 
 #tab1{
-  height:50px;
-  width:50px;
+  @extend .tabs;
+  left:25px;
+}
+
+.tabs-default1:hover{
+  background:{
+    position:0 -50px;
+  }
 }
 
 #tab2{
-  @extend #tab1;
-  margin-right:10px;
+  @extend .tabs;
+  left:90px;
+}
+
+.tabs-default2:hover{
+  background:{
+    position:0 0;
+  }
 }
 
 #banner{
@@ -67,7 +84,7 @@ $san-serif:Arial, Helvetica, sans-serif;
 }
 
 #subtitle{
-  color:$text-mid;
+  color:$text-mid-light;
   font:{
     size:1em;
   }
@@ -118,6 +135,46 @@ $san-serif:Arial, Helvetica, sans-serif;
   height:100%;
 }
 
+#contentSpacer{
+  height:45px;
+  width:100%;
+}
+
+.description{
+  width:300px;
+  margin:{
+    left:25px;
+  }
+}
+
+.contentHeader, .contentImage, .contentText{
+  margin:{
+    bottom:25px;
+  }
+  font:{
+    size:1em;
+  }
+}
+
+.contentHeader{
+  color:$text-mid-dark;
+  font:{
+    family:$san-serif;
+    weight:bold;
+  }
+}
+
+.contentImage{
+  width:300px;
+}
+
+.contentText{
+  color:$text-dark;
+  font:{
+    family:$serif;
+  }
+}
+
 #controlsPane{
   background:{
     color:$mid-background;
@@ -126,3 +183,33 @@ $san-serif:Arial, Helvetica, sans-serif;
   height:100px;
 }
 
+#timeControls{
+  margin:15px;
+    .time-control{
+    vertical-align:top;
+    padding:{
+      right:15px;
+      left:15px;
+    }
+  }
+}
+
+#playPause{
+  cursor:pointer;
+}
+
+#timeSliderPane{
+  width:80%;
+}
+
+.dijitRuleMark{
+  border:none;
+}
+
+.tundra .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper, .tundra .dijitSliderLeftBumper{
+  background:#ffffff;
+}
+
+.tundra .dijitSliderImageHandleH{
+  outline:none;
+}

@@ -51,7 +51,8 @@
 
     <div id="mainWindow" dojotype="dijit.layout.BorderContainer" design="headline" gutters="false">
 
-      <div id="tabs"><span id="tab1" class="tabs-active1"></span><span id="tab2" class="tabs-default2"></span></div>
+      <div id="tab1" class="tabs-active1 tabs currentTab"></div>
+      <div id="tab2" class="tabs-default2 tabs"></div>
 
       <div id="banner" dojotype="dijit.layout.BorderContainer" gutters="false" region="top">
         <div id="titlePane" dojotype="dijit.layout.ContentPane" region="center">
@@ -71,11 +72,21 @@
       <div id="content" dojotype="dijit.layout.BorderContainer" gutters="false" region="center">
 
         <div id="sidePane" dojotype="dijit.layout.BorderContainer" gutters="false" region="left">
-        </div><!--/sidePanel-->
+          <div id="contentSpacer" dojotype="dijit.layout.ContentPane" region="top">
+          </div><!--/contentSpacer-->
+          <div id="sidePaneContent" dojotype="dijit.layout.ContentPane" region="center">
+          </div><!--/sidePaneContent-->
+        </div><!--/sidePane-->
 
         <div id="mapContent" dojotype="dijit.layout.BorderContainer" gutters="false" region="center">
           <div id="controlsPane" dojotype="dijit.layout.ContentPane" region="top">
-          </div><!--/map-->
+            <table id="timeControls">
+              <tr>
+                <td id="playButton" class="time-control"><img id="playPause" src="images/playControls/playDefault.png" alt="Play/Pause"></td>
+                <td><span id="timeSliderPane" class="time-control"></span></td>
+              </tr>
+            </table><!--/timeControls-->
+          </div><!--/controlsPane-->
           <div id="map" dojotype="dijit.layout.ContentPane" region="center">
           </div><!--/map-->
         </div><!--/mapContent-->

@@ -1,13 +1,63 @@
-//Add Additional Esri API Scripts
+//Add additional Esri API scripts
 dojo.require("esri.map");
 dojo.require("esri.arcgis.utils");
 dojo.require("dijit.dijit");
 dojo.require("dijit.layout.BorderContainer");
 dojo.require("dijit.layout.ContentPane");
+dojo.require("esri.dijit.Scalebar");
+dojo.require("esri.dijit.TimeSlider");
+
+window.currentBat = 0;
 
 $(document).ready(function(){
-    $("#title").html(appData.title);
-    $("#subtitle").html(appData.subtitle);
+  //Initial layout configuration
+  $("#title").html(appData.title);
+  $("#subtitle").html(appData.subtitle);
+  switchToMainContent();
+
+  //Change application context
+  $(".tabs").click(function(){
+    if($(this).hasClass("tabs-default1")){
+      $(this).addClass("tabs-active1").removeClass("currentTab").removeClass("tabs-default1").addClass("currentTab");
+      $(".tabs-active2").addClass("tabs-default2");
+      $(".tabs-default2").removeClass("tabs-active2").removeClass("currentTab");
+      switchToMainContent();
+    }
+    else if($(this).hasClass("tabs-default2")){
+      $(this).addClass("tabs-active2").removeClass("tabs-default2").addClass("currentTab");
+      $(".tabs-active1").addClass("tabs-default1");
+      $(".tabs-default1").removeClass("tabs-active1").removeClass("currentTab");
+      switchToBatGallery(currentBat);
+    }
+  });
+
+  $("#playPause").mouseover(function(){
+    if($(this).attr("src") === "images/playControls/playDefault.png"){
+      $(this).attr("src","images/playControls/playHover.png");
+    }
+    else{
+      $(this).attr("src","images/playControls/pauseHover.png");
+    }
+  });
+
+  $("#playPause").mouseout(function(){
+    if($(this).attr("src") === "images/playControls/playHover.png"){
+      $(this).attr("src","images/playControls/playDefault.png");
+    }
+    else{
+      $(this).attr("src","images/playControls/pauseDefault.png");
+    }
+  });
+
+  $("#playPause").click(function(){
+    if($(this).attr("src") === "images/playControls/playHover.png"){
+      $(this).attr("src","images/playControls/pauseHover.png");
+    }
+    else{
+      $(this).attr("src","images/playControls/playHover.png");
+    }
+  });
+
 });
 
 dojo.addOnLoad(function(){
@@ -31,15 +81,69 @@ var createMap = function(){
 
     //add the legend
     var layers = response.itemInfo.itemData.operationalLayers;
+
+    window.timeProperties = response.itemInfo.itemData.widgets.timeSlider.properties;
+
+
     if(map.loaded){
-      //initMap(layers);
+      initUI(layers);
     }
     else{
       dojo.connect(map,"onLoad",function(){
-        //initMap(layers);
+        initUI(layers);
       });
     }
   },function(error){
     console.log("Map creation failed: ", dojo.toJson(error));
   });
+};
+
+var initUI = function(layers){
+
+  //Add scalebar to map
+  var scalebar = new esri.dijit.Scalebar({
+    map: map
+  });
+
+  //Add timeslider
+  var startTime = timeProperties.startTime;
+  var endTime = timeProperties.endTime;
+  var fullTimeExtent = new esri.TimeExtent(new Date(startTime), new Date(endTime));
+
+  map.setTimeExtent(fullTimeExtent);
+
+  window.timeSlider = new esri.dijit.TimeSlider({
+    style: "width: 100%;"
+  }, dojo.byId("timeSliderPane"));
+
+  map.setTimeSlider(timeSlider);
+  timeSlider.setThumbCount(1);
+  timeSlider.setThumbMovingRate(1000);
+  if(timeProperties.numberOfStops){
+    timeSlider.createTimeStopsByCount(fullTimeExtent,timeProperties.numberOfStops);
+  }
+  else{
+    timeSlider.createTimeStopsByTimeInterval(fullTimeExtent,timeProperties.timeStopInterval.interval,timeProperties.timeStopInterval.units);
+  }
+
+  dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
+    if($("#timeSliderPane").children("table").children("tbody").children("tr").children("td").length > 1){
+      $("#timeSliderPane").children("table").children("tbody").children("tr").children("td").each(function(){
+        if($(this).attr("id") !== "tsTmp"){
+          $(this).remove();
+        }
+      });
+    }
+  });
+
+  timeSlider.startup();
+
+};
+
+var switchToMainContent = function(){
+  $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"</p></div>");
+};
+
+var switchToBatGallery = function(bat){
+  $("#sidePaneContent").html("");
 };
