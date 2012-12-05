@@ -8,6 +8,7 @@ dojo.require("esri.dijit.Scalebar");
 dojo.require("esri.dijit.TimeSlider");
 
 window.currentBat = 0;
+window.isPlaying = false;
 
 $(document).ready(function(){
   //Initial layout configuration
@@ -50,6 +51,7 @@ $(document).ready(function(){
   });
 
   $("#playPause").click(function(){
+    animate();
     if($(this).attr("src") === "images/playControls/playHover.png"){
       $(this).attr("src","images/playControls/pauseHover.png");
     }
@@ -78,6 +80,10 @@ var createMap = function(){
 
     //resize the map when the browser resizes
     dojo.connect(dijit.byId('map'), 'resize', map,map.resize);
+
+    dojo.connect(map,"onUpdateEnd",function(){
+      playAnimation();
+	});
 
     //add the legend
     var layers = response.itemInfo.itemData.operationalLayers;
@@ -113,12 +119,13 @@ var initUI = function(layers){
   map.setTimeExtent(fullTimeExtent);
 
   window.timeSlider = new esri.dijit.TimeSlider({
-    style: "width: 100%;"
+    style: "width: 100%;",
+    loop:true
   }, dojo.byId("timeSliderPane"));
 
   map.setTimeSlider(timeSlider);
   timeSlider.setThumbCount(1);
-  timeSlider.setThumbMovingRate(1000);
+  timeSlider.setThumbMovingRate(500);
   if(timeProperties.numberOfStops){
     timeSlider.createTimeStopsByCount(fullTimeExtent,timeProperties.numberOfStops);
   }
@@ -127,6 +134,7 @@ var initUI = function(layers){
   }
 
   dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
+    timeSlider.pause();
     if($("#timeSliderPane").children("table").children("tbody").children("tr").children("td").length > 1){
       $("#timeSliderPane").children("table").children("tbody").children("tr").children("td").each(function(){
         if($(this).attr("id") !== "tsTmp"){
@@ -152,3 +160,22 @@ var switchToMainContent = function(){
 var switchToBatGallery = function(bat){
   $("#sidePaneContent").html("");
 };
+
+//Start animation functions
+var animate = function(){
+  if (isPlaying === false){
+    isPlaying = true;
+	playAnimation();
+  }
+  else{
+	isPlaying = false;
+	timeSlider.pause();
+  }
+};
+
+var playAnimation = function() {
+  if (isPlaying === true){
+    timeSlider.play();
+  }
+};
+//End animation functions
