@@ -134,6 +134,11 @@ var initUI = function(layers){
         }
       });
     }
+    if($(".dijitRuleMark").first().html() === ""){
+      $(".dijitRuleMark").each(function(i){
+        $(this).html(2005+i);
+      });
+    }
   });
 
   timeSlider.startup();

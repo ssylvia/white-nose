@@ -1,6 +1,6 @@
 window.appData = {
 
-  "webmap" : "cffc475ae9d74d41aa21138c267ba9f5",
+  "webmap" : "9629c5f58dc5418788bb96cb9c82321d",
   "title" : "Millions of bats are dying from white nose syndrome",
   "subtitle" : "As the disease rapidly spreads across North America, more and more populations are threatened.",
   "mainContent" : {

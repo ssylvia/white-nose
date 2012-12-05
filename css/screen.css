@@ -250,7 +250,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #timeControls .time-control {
   vertical-align: top;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 8px;
 }
 
 /* line 197, ../sass/screen.scss */
@@ -265,15 +265,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 205, ../sass/screen.scss */
 .dijitRuleMark {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
   border: none;
+  margin-top: 18px;
+  margin-left: -14px;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .tundra .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper, .tundra .dijitSliderLeftBumper {
   background: #ffffff;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .tundra .dijitSliderImageHandleH {
   outline: none;
 }

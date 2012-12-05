@@ -189,7 +189,7 @@ $san-serif:Arial, Helvetica, sans-serif;
     vertical-align:top;
     padding:{
       right:15px;
-      left:15px;
+      left:8px;
     }
   }
 }
@@ -203,7 +203,17 @@ $san-serif:Arial, Helvetica, sans-serif;
 }
 
 .dijitRuleMark{
+  color:$text-light;
+  font:{
+    family:$san-serif;
+    size:0.8em;
+    weight:bold;
+  }
   border:none;
+  margin:{
+    top:18px;
+    left:-14px;
+  }
 }
 
 .tundra .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper, .tundra .dijitSliderLeftBumper{
