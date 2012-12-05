@@ -132,6 +132,7 @@ var initUI = function(layers){
   else{
     timeSlider.createTimeStopsByTimeInterval(fullTimeExtent,timeProperties.timeStopInterval.interval,timeProperties.timeStopInterval.units);
   }
+  timeSlider.setThumbIndexes([6]);
 
   dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
     timeSlider.pause();
