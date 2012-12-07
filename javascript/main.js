@@ -69,7 +69,6 @@ dojo.addOnLoad(function(){
 var createMap = function(){
   var mapDeferred = esri.arcgis.utils.createMap(appData.webmap, "map", {
     mapOptions: {
-      extent : new esri.geometry.Extent({"xmin":-15291242.010989934,"ymin":540184.1574534695,"xmax":-6192178.163924971,"ymax":8602150.404745435,"spatialReference":{"wkid":102100}}),
       slider : true,
       sliderStyle : "small",
       nav : false
@@ -93,10 +92,14 @@ var createMap = function(){
 
     if(map.loaded){
       initUI(layers);
+      startFade(getLayerByName(map,"time"));
+      window.initExtent = map.extent;
     }
     else{
       dojo.connect(map,"onLoad",function(){
         initUI(layers);
+        startFade(getLayerByName(map,"time"));
+        window.initExtent = map.extent;
       });
     }
   },function(error){
@@ -112,7 +115,7 @@ var initUI = function(layers){
   });
 
   //Add timeslider
-  var startTime = timeProperties.startTime;
+  var startTime = timeProperties.startTime + 31536000000;
   var endTime = timeProperties.endTime;
   var fullTimeExtent = new esri.TimeExtent(new Date(startTime), new Date(endTime));
 
@@ -126,13 +129,15 @@ var initUI = function(layers){
   map.setTimeSlider(timeSlider);
   timeSlider.setThumbCount(1);
   timeSlider.setThumbMovingRate(500);
+  console.log(timeProperties);
   if(timeProperties.numberOfStops){
     timeSlider.createTimeStopsByCount(fullTimeExtent,timeProperties.numberOfStops);
   }
   else{
     timeSlider.createTimeStopsByTimeInterval(fullTimeExtent,timeProperties.timeStopInterval.interval,timeProperties.timeStopInterval.units);
   }
-  timeSlider.setThumbIndexes([6]);
+  //timeSlider.timeStops.splice(0,1);
+  //timeSlider.setThumbIndexes([6]);
 
   dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
     timeSlider.pause();
@@ -145,7 +150,7 @@ var initUI = function(layers){
     }
     if($(".dijitRuleMark").first().html() === ""){
       $(".dijitRuleMark").each(function(i){
-        $(this).html(2005+i);
+        $(this).html(2006+i);
       });
     }
   });
@@ -155,11 +160,16 @@ var initUI = function(layers){
 };
 
 var switchToMainContent = function(){
+  map.set
+  $("#timeControls").show();
   $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"</p></div>");
+  startFade(getLayerByName(map,"time"));
 };
 
 var switchToBatGallery = function(bat){
-  $("#sidePaneContent").html("");
+  $("#timeControls").hide();
+  $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
+  startFade(getLayerByName(map,["14147","cache"]));
 };
 
 //Start animation functions
@@ -180,3 +190,94 @@ var playAnimation = function() {
   }
 };
 //End animation functions
+
+//Layer Fade Functions
+var getLayerByName = function(mapVariable,layerName,searchMainLayers,searchGraphicsLayers){
+  var layers = [];
+
+  if($.isArray(layerName)){
+    dojo.forEach(layerName,function(lyrName){
+      if(searchMainLayers !== false){
+        dojo.forEach(mapVariable.layerIds,function(lyr){
+          if(lyr.toLowerCase().search(lyrName.toLowerCase()) !== -1){
+            layers.push(mapVariable.getLayer(lyr));
+          }
+        });
+      }
+      if(searchGraphicsLayers !== false){
+        dojo.forEach(mapVariable.graphicsLayerIds,function(lyr){
+          if(lyr.toLowerCase().search(lyrName.toLowerCase()) !== -1){
+            layers.push(mapVariable.getLayer(lyr));
+          }
+        });
+      }
+    });
+  }
+  else{
+    if(searchMainLayers !== false){
+      dojo.forEach(mapVariable.layerIds,function(lyr){
+        if(lyr.toLowerCase().search(layerName.toLowerCase()) !== -1){
+          layers.push(mapVariable.getLayer(lyr));
+        }
+      });
+    }
+    if(searchGraphicsLayers !== false){
+      dojo.forEach(mapVariable.graphicsLayerIds,function(lyr){
+        if(lyr.toLowerCase().search(layerName.toLowerCase()) !== -1){
+          layers.push(mapVariable.getLayer(lyr));
+        }
+      });
+    }
+  }
+
+  return layers;
+};
+
+var startFade = function(layers){
+  dojo.forEach(getLayerByName(map,"wns",true,false),function(lyr){
+    lyr.fading = false;
+    if ($.inArray(lyr,layers) !== -1) {
+      setTimeout(function() {
+        lyr.fading = true;
+        fadeLayerIn(map,lyr);
+      }, 11);
+    }
+    else{
+      setTimeout(function() {
+        lyr.fading = true;
+        fadeLayerOut(map,lyr);
+      }, 11);
+    }
+  });
+};
+
+var fadeLayerIn = function(mapVariable,layer){
+  if(!layer.visible){
+    layer.show();
+  }
+  if(layer.opacity < 1 && layer.fading === true){
+    layer.setOpacity(layer.opacity + 0.1);
+    setTimeout(function() {
+      fadeLayerIn(mapVariable,layer);
+    }, 20);
+  }
+  else{
+    layer.setOpacity(1);
+    layer.fading = false;
+  }
+};
+
+var fadeLayerOut = function(mapVariable,layer){
+  if(layer.opacity > 0 && layer.fading === true){
+    layer.setOpacity(layer.opacity - 0.1);
+    setTimeout(function() {
+      fadeLayerOut(mapVariable,layer);
+    }, 20);
+  }
+  else{
+    layer.setOpacity(0);
+    layer.hide();
+    layer.fading = false;
+  }
+};
+//Layer fade functions end

@@ -147,7 +147,7 @@ $san-serif:Arial, Helvetica, sans-serif;
   }
 }
 
-.contentHeader, .contentImage, .contentText{
+.contentHeader, .speciesHeader, .contentImage, .contentText{
   margin:{
     bottom:25px;
   }
@@ -162,6 +162,18 @@ $san-serif:Arial, Helvetica, sans-serif;
     family:$san-serif;
     weight:bold;
   }
+}
+
+.speciesHeader{
+  color:$text-dark;
+  font:{
+    family:$san-serif;
+    weight:bold;
+  }
+  padding:{
+    top:10px
+  }
+  border-top:1px solid $text-mid-dark;
 }
 
 .contentImage{
