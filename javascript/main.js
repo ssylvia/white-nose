@@ -10,10 +10,30 @@ dojo.require("esri.dijit.TimeSlider");
 window.currentBat = 0;
 window.isPlaying = false;
 
+$(window).resize(function(){
+  if($(window).width() <= 1100){
+    $("#time-legend-pane").css("padding-left","5px");
+    if(navigator.userAgent.match(/iPad/i) === null){
+      $("#batGallery").css("margin-top","5px");
+    }
+  }
+  else{
+    $("#time-legend-pane").css("padding-left","55px");
+    $("#batGallery").css("margin-top","12px");
+  }
+});
+
 $(document).ready(function(){
   //Initial layout configuration
   $("#title").html(appData.title);
   $("#subtitle").html(appData.subtitle);
+
+  if($(window).width() <= 1100){
+    $("#time-legend-pane").css("padding-left","5px");
+    if(navigator.userAgent.match(/iPad/i) === null){
+      $("#batGallery").css("margin-top","5px");
+    }
+  }
 
   //Change application context
   $(".tabs").click(function(){
@@ -70,7 +90,9 @@ var createMap = function(){
     mapOptions: {
       slider : true,
       sliderStyle : "small",
-      nav : false
+      showAttribution : false,
+      nav : false,
+      wrapAround180 : true
     }
   });
   mapDeferred.then(function(response) {
@@ -161,16 +183,44 @@ var initUI = function(layers){
 
 var switchToMainContent = function(){
   $("#timeControls").show();
+  $("#sourcePane").hide();
+  $("#batGallery").hide();
   $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"</p></div>");
-  startFade(getLayerByName(map,"time"));
+  startFade(getLayerByName(map,["time","backgroundcounties"]));
   map.setExtent(initExtent);
+  dijit.byId("mainWindow").layout();
 };
 
 var switchToBatGallery = function(bat){
+  currentBat = bat;
   $("#timeControls").hide();
+  $("#sourcePane").show();
+  $("#batGallery").show();
+  if($("#batGallery").length === 0){
+    $("#controlsPane").append("<table id='batGallery'><tr></tr></table>");
+    dojo.forEach(appData.batContent,function(data,i) {
+      $("#batGallery").children("tbody").children("tr").append("<td class='batGalleryPane'><img id='batImg"+i+"' class='batImg' src='"+appData.batContent[i].imageURL+"' onclick='switchToBatGallery("+i+")'></td>");
+    });
+    $(".batImg").mouseover(function() {
+      $(this).css("border-color","#FC0000");
+    });
+    $(".batImg").mouseout(function() {
+      if(!$(this).hasClass("currentImg")){
+        $(this).css("border-color","#949494");
+      }
+    });
+  }
   $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
-  startFade(getLayerByName(map,[appData.batContent[bat].species,"cache"]));
+  startFade(getLayerByName(map,[appData.batContent[bat].species,"cache","backgroundcounties"]));
   map.setExtent(getLayerByName(map,appData.batContent[bat].species)[0].fullExtent);
+  dijit.byId("mainWindow").layout();
+  $(".batImg").css("border-color","#949494").removeClass("currentImg");
+  $("#batImg"+bat).css("border-color","#FC0000").addClass("currentImg");
+  if($(window).width() <= 1100){
+    if(navigator.userAgent.match(/iPad/i) === null){
+      $("#batGallery").css("margin-top","5px");
+    }
+  }
 };
 
 //Start animation functions

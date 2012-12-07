@@ -5,8 +5,8 @@ window.appData = {
   "subtitle" : "As the disease rapidly spreads across North America, more and more populations are threatened.",
   "mainContent" : {
     "heading" : "The spreading scourge of white nose",
-    "imageURL" : "http://www.nimbios.org/images/3842close-upofnosewithfungus.jpg",
-    "text" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.<br><br>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat."
+    "imageURL" : "http://farm3.staticflickr.com/2591/5765048289_ff101828c9_n.jpg",
+    "text" : "White-nose Syndrome has devastated bat populations across the eastern United States during the past five years, causing \"the most precipitous wildlife decline in the past century in North America,\" according to biologists. White-nose Syndrome has killed more than 5.7 million bats since it was discovered in a single New York cave in February 2006.<br><br>Named for a cold-loving white fungus typically found on the faces and wings of infected bats, White-nose Syndrome causes bats to awaken more often during hibernation and use up the stored fat reserves that are needed to get them through the winter. Infected bats often emerge too soon from hibernation and are often seen flying around in midwinter. These bats usually freeze or starve to death."
   },
   "batContent" : [
     {
