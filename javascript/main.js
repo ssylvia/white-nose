@@ -14,7 +14,6 @@ $(document).ready(function(){
   //Initial layout configuration
   $("#title").html(appData.title);
   $("#subtitle").html(appData.subtitle);
-  switchToMainContent();
 
   //Change application context
   $(".tabs").click(function(){
@@ -94,12 +93,14 @@ var createMap = function(){
       initUI(layers);
       startFade(getLayerByName(map,"time"));
       window.initExtent = map.extent;
+      switchToMainContent();
     }
     else{
       dojo.connect(map,"onLoad",function(){
         initUI(layers);
         startFade(getLayerByName(map,"time"));
         window.initExtent = map.extent;
+        switchToMainContent();
       });
     }
   },function(error){
@@ -129,7 +130,6 @@ var initUI = function(layers){
   map.setTimeSlider(timeSlider);
   timeSlider.setThumbCount(1);
   timeSlider.setThumbMovingRate(500);
-  console.log(timeProperties);
   if(timeProperties.numberOfStops){
     timeSlider.createTimeStopsByCount(fullTimeExtent,timeProperties.numberOfStops);
   }
@@ -160,16 +160,17 @@ var initUI = function(layers){
 };
 
 var switchToMainContent = function(){
-  map.set
   $("#timeControls").show();
   $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"</p></div>");
   startFade(getLayerByName(map,"time"));
+  map.setExtent(initExtent);
 };
 
 var switchToBatGallery = function(bat){
   $("#timeControls").hide();
   $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
-  startFade(getLayerByName(map,["14147","cache"]));
+  startFade(getLayerByName(map,[appData.batContent[bat].species,"cache"]));
+  map.setExtent(getLayerByName(map,appData.batContent[bat].species)[0].fullExtent);
 };
 
 //Start animation functions
