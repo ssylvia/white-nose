@@ -11,7 +11,7 @@ window.currentBat = 0;
 window.isPlaying = false;
 
 $(window).resize(function(){
-  if($(window).width() <= 1100){
+  if($(window).width() <= 1250){
     $("#time-legend-pane").css("padding-left","5px");
     if(navigator.userAgent.match(/iPad/i) === null){
       $("#batGallery").css("margin-top","5px");
@@ -21,6 +21,7 @@ $(window).resize(function(){
     $("#time-legend-pane").css("padding-left","55px");
     $("#batGallery").css("margin-top","12px");
   }
+  $("#timeControls").width($("#controlsPane").width() - 35);
 });
 
 $(document).ready(function(){
@@ -28,25 +29,21 @@ $(document).ready(function(){
   $("#title").html(appData.title);
   $("#subtitle").html(appData.subtitle);
 
-  if($(window).width() <= 1100){
+  if($(window).width() <= 1250){
     $("#time-legend-pane").css("padding-left","5px");
     if(navigator.userAgent.match(/iPad/i) === null){
       $("#batGallery").css("margin-top","5px");
     }
   }
 
+  $("#timeControls").width($(window).width() - 385);
+
   //Change application context
   $(".tabs").click(function(){
     if($(this).hasClass("tabs-default1")){
-      $(this).addClass("tabs-active1").removeClass("currentTab").removeClass("tabs-default1").addClass("currentTab");
-      $(".tabs-active2").addClass("tabs-default2");
-      $(".tabs-default2").removeClass("tabs-active2").removeClass("currentTab");
       switchToMainContent();
     }
     else if($(this).hasClass("tabs-default2")){
-      $(this).addClass("tabs-active2").removeClass("tabs-default2").addClass("currentTab");
-      $(".tabs-active1").addClass("tabs-default1");
-      $(".tabs-default1").removeClass("tabs-active1").removeClass("currentTab");
       switchToBatGallery(currentBat);
     }
   });
@@ -86,13 +83,26 @@ dojo.addOnLoad(function(){
 });
 
 var createMap = function(){
+
+  window.initExtent = new esri.geometry.Extent({"xmin":-11097584.926455263,"ymin":4078383.4864549944,"xmax":-6890490.889640282,"ymax":6382501.267082735, "spatialReference":{"wkid":102100}});
+
+  var lods = [
+    {"level" : 0, "resolution" : 19567.8792409999, "scale" : 7.3957190948944E7},
+  	{"level" : 1, "resolution" : 9783.93962049996, "scale" : 3.6978595474472E7},
+    {"level" : 2, "resolution" : 4891.96981024998, "scale" : 1.8489297737236E7},
+    {"level" : 3, "resolution" : 2445.98490512499, "scale" : 9244648.868618},
+    {"level" : 4, "resolution" : 1222.99245256249, "scale" : 4622324.434309}
+  ];
+
   var mapDeferred = esri.arcgis.utils.createMap(appData.webmap, "map", {
     mapOptions: {
+      extent : initExtent,
       slider : true,
       sliderStyle : "small",
       showAttribution : false,
       nav : false,
-      wrapAround180 : true
+      wrapAround180 : true,
+      lods : lods
     }
   });
   mapDeferred.then(function(response) {
@@ -114,14 +124,12 @@ var createMap = function(){
     if(map.loaded){
       initUI(layers);
       startFade(getLayerByName(map,"time"));
-      window.initExtent = map.extent;
       switchToMainContent();
     }
     else{
       dojo.connect(map,"onLoad",function(){
         initUI(layers);
         startFade(getLayerByName(map,"time"));
-        window.initExtent = map.extent;
         switchToMainContent();
       });
     }
@@ -151,15 +159,13 @@ var initUI = function(layers){
 
   map.setTimeSlider(timeSlider);
   timeSlider.setThumbCount(1);
-  timeSlider.setThumbMovingRate(500);
+  timeSlider.setThumbMovingRate(1000);
   if(timeProperties.numberOfStops){
     timeSlider.createTimeStopsByCount(fullTimeExtent,timeProperties.numberOfStops);
   }
   else{
     timeSlider.createTimeStopsByTimeInterval(fullTimeExtent,timeProperties.timeStopInterval.interval,timeProperties.timeStopInterval.units);
   }
-  //timeSlider.timeStops.splice(0,1);
-  //timeSlider.setThumbIndexes([6]);
 
   dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
     timeSlider.pause();
@@ -182,24 +188,31 @@ var initUI = function(layers){
 };
 
 var switchToMainContent = function(){
+  $("#tab1").addClass("tabs-active1").removeClass("currentTab").removeClass("tabs-default1").addClass("currentTab");
+  $(".tabs-active2").addClass("tabs-default2");
+  $(".tabs-default2").removeClass("tabs-active2").removeClass("currentTab");
   $("#timeControls").show();
-  $("#sourcePane").hide();
+  $("#pagcSource").show();
+  $("#bciSource").hide();
   $("#batGallery").hide();
-  $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"</p></div>");
+  $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"<br><br><span class='readMore' onclick='switchToBatGallery("+currentBat+")'>VIEW AFFECTED SPECIES &gt;&gt;</span></p></div>");
   startFade(getLayerByName(map,["time","backgroundcounties"]));
-  map.setExtent(initExtent);
-  dijit.byId("mainWindow").layout();
+  map.setExtent(initExtent,true);
 };
 
 var switchToBatGallery = function(bat){
   currentBat = bat;
+  $("#tab2").addClass("tabs-active2").removeClass("tabs-default2").addClass("currentTab");
+  $(".tabs-active1").addClass("tabs-default1");
+  $(".tabs-default1").removeClass("tabs-active1").removeClass("currentTab");
   $("#timeControls").hide();
-  $("#sourcePane").show();
+  $("#pagcSource").hide();
+  $("#bciSource").show();
   $("#batGallery").show();
   if($("#batGallery").length === 0){
     $("#controlsPane").append("<table id='batGallery'><tr></tr></table>");
     dojo.forEach(appData.batContent,function(data,i) {
-      $("#batGallery").children("tbody").children("tr").append("<td class='batGalleryPane'><img id='batImg"+i+"' class='batImg' src='"+appData.batContent[i].imageURL+"' onclick='switchToBatGallery("+i+")'></td>");
+      $("#batGallery").children("tbody").children("tr").append("<td class='batGalleryPane'><img id='batImg"+i+"' class='batImg' title='"+appData.batContent[i].commonName+"' src='"+appData.batContent[i].imageURL+"' onclick='switchToBatGallery("+i+")'></td>");
     });
     $(".batImg").mouseover(function() {
       $(this).css("border-color","#FC0000");
@@ -209,14 +222,21 @@ var switchToBatGallery = function(bat){
         $(this).css("border-color","#949494");
       }
     });
+    if(navigator.userAgent.match(/iPad/i) === null){
+      $(".batImg").tipTip({
+        maxWidth : "auto",
+        delay : 0
+      });
+    }
   }
   $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
   startFade(getLayerByName(map,[appData.batContent[bat].species,"cache","backgroundcounties"]));
-  map.setExtent(getLayerByName(map,appData.batContent[bat].species)[0].fullExtent);
-  dijit.byId("mainWindow").layout();
+  map.setExtent(new esri.geometry.Extent({"xmin":-18935309.017567962,"ymin":-363864.36916996073,"xmax":-6235755.390159027
+,"ymax":10359333.454897985, "spatialReference":{"wkid":102100}}),true);
+  //map.setExtent(getLayerByName(map,appData.batContent[bat].species)[0].fullExtent,true);
   $(".batImg").css("border-color","#949494").removeClass("currentImg");
   $("#batImg"+bat).css("border-color","#FC0000").addClass("currentImg");
-  if($(window).width() <= 1100){
+  if($(window).width() <= 1250){
     if(navigator.userAgent.match(/iPad/i) === null){
       $("#batGallery").css("margin-top","5px");
     }

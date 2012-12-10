@@ -142,7 +142,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #title {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6em;
+  font-size: 1.2em;
+  font-weight: bold;
   margin: 25px 25px 10px 25px;
   white-space: nowrap;
   overflow: hidden;
@@ -151,26 +152,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-overflow: ellipsis;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #subtitle {
   color: #dadada;
   font-size: 1em;
   margin: 0 25px 0 25px;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #logoPane {
   height: 100%;
   width: 230px;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #social {
   margin: 25px 25px 0 0;
   float: right;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #smLink {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -179,12 +180,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #smLink:hover {
   text-decoration: underline;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #logo {
   margin: 15px 25px 0 0;
   float: right;
@@ -192,39 +193,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   outline: none;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #sidePane {
   background-color: white;
   width: 350px;
   height: 100%;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 #contentSpacer {
   height: 45px;
   width: 100%;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .description {
   width: 300px;
   margin-left: 25px;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .contentHeader, .speciesHeader, .contentImage, .contentText {
   margin-bottom: 25px;
   font-size: 1em;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .contentHeader {
   color: #666666;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .speciesHeader {
   color: #444444;
   font-family: Arial, Helvetica, sans-serif;
@@ -233,38 +234,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top: 1px solid #666666;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .contentImage {
   width: 300px;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .contentText {
   color: #444444;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .readMore {
   color: #444444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   text-decoration: none;
+  cursor: pointer;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .readMore:hover {
   text-decoration: underline;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #sourcePane {
-  display: none;
   width: 100%;
   height: 40px;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 #sourcePane p, .srcLink {
   padding-top: 10px;
   text-align: center;
@@ -273,35 +274,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 12px;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
+#bciSource {
+  display: none;
+}
+
+/* line 232, ../sass/screen.scss */
 #controlsPane {
   background-color: #949494;
   width: 100%;
   height: 95px;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 #timeControls {
   margin: 15px;
 }
-/* line 237, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #timeControls .time-control {
   vertical-align: top;
   padding-right: 15px;
   padding-left: 8px;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 #slider-td {
   vertical-align: top;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
+#playButton {
+  width: 35px;
+}
+
+/* line 259, ../sass/screen.scss */
 #playPause {
   cursor: pointer;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .dijitRuleMark {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -312,17 +323,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-left: -14px;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .tundra .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper, .tundra .dijitSliderLeftBumper {
   background: #ffffff;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .tundra .dijitSliderImageHandleH {
   outline: none;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 #time-legend-pane {
   color: #444444;
   padding-top: 10px;
@@ -331,7 +342,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 1em;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .legend-box {
   display: inline-block;
   vertical-align: top;
@@ -339,19 +350,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 1em;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #confirmed-leg {
-  background-color: #EC7C77;
-  border: 1px solid #F2D383;
+  background-color: #ee5959;
+  border: 1px solid #f19374;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #suspected-leg {
-  background-color: #FECB65;
-  border: 1px solid #EFEF84;
+  background-color: #fbbd38;
+  border: 1px solid #fae637;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 #batGallery {
   margin-top: 12px;
   margin-right: auto;
@@ -360,12 +371,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   min-width: 80%;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .batGalleryPane {
   text-align: center;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .batImg {
   margin-left: 2px;
   margin-right: 2px;
@@ -374,7 +385,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 2px solid #949494;
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .batImg:hover {
   border: 2px solid #fc0000;
+}
+
+/* line 348, ../sass/screen.scss */
+.logoImg {
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  z-index: 30;
+  outline: none;
+}
+
+/* line 356, ../sass/screen.scss */
+#pgcLogo {
+  bottom: 44px;
+}
+
+/* line 360, ../sass/screen.scss */
+#bciLogo {
+  bottom: 115px;
 }

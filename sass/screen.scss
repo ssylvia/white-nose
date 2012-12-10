@@ -77,7 +77,8 @@ $san-serif:Arial, Helvetica, sans-serif;
   color:$text-light;
   font:{
     family:$san-serif;
-    size:1.6em;
+    size:1.2em;
+    weight:bold;
   }
   margin:25px 25px 10px 25px;
   @include ellipsis(true);
@@ -196,6 +197,7 @@ $san-serif:Arial, Helvetica, sans-serif;
   text:{
     decoration:none;
   }
+  cursor:pointer
 }
 
 .readMore:hover{
@@ -205,7 +207,6 @@ $san-serif:Arial, Helvetica, sans-serif;
 }
 
 #sourcePane{
-  display:none;
   width:100%;
   height:40px;
 }
@@ -222,6 +223,10 @@ $san-serif:Arial, Helvetica, sans-serif;
     family:$san-serif;
     size:12px;
   }
+}
+
+#bciSource{
+  display:none;
 }
 
 #controlsPane{
@@ -245,6 +250,10 @@ $san-serif:Arial, Helvetica, sans-serif;
 
 #slider-td{
   vertical-align:top;
+}
+
+#playButton{
+  width:35px;
 }
 
 #playPause{
@@ -294,16 +303,16 @@ $san-serif:Arial, Helvetica, sans-serif;
 
 #confirmed-leg{
   background:{
-    color:#EC7C77;
+    color:#ee5959;
   }
-  border:1px solid #F2D383;
+  border:1px solid #f19374;
 }
 
 #suspected-leg{
   background:{
-    color:#FECB65;
+    color:#fbbd38;
   }
-  border:1px solid #EFEF84;
+  border:1px solid #fae637;
 }
 
 #batGallery{
@@ -334,4 +343,20 @@ $san-serif:Arial, Helvetica, sans-serif;
 
 .batImg:hover{
   border:2px solid #fc0000;
+}
+
+.logoImg{
+  position:absolute;
+  cursor:pointer;
+  right:5px;
+  z-index:30;
+  outline:none;
+}
+
+#pgcLogo{
+  bottom:44px;
+}
+
+#bciLogo{
+  bottom:115px;
 }
