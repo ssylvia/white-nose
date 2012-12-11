@@ -1138,3 +1138,4 @@
 {"ts":1355247476752,"patch":[[{"diffs":[[0,"  right:"],[1,"px"],[0,"\n  }\n   "]],"start1":3187,"start2":3187,"length1":16,"length2":18}]],"length":4759,"saved":false}
 {"ts":1355247477833,"patch":[[{"diffs":[[0,"right:px"],[1,";"],[0,"\n  }\n   "]],"start1":3189,"start2":3189,"length1":16,"length2":17}]],"length":4760,"saved":false}
 {"ts":1355247554086,"patch":[[{"diffs":[[0,"bold;\n  }\n  "],[1,"//"],[0,"border:none;"]],"start1":3503,"start2":3503,"length1":24,"length2":26}]],"length":4762,"saved":false}
+{"ts":1355247682809,"patch":[[{"diffs":[[0,";\n  }\n  "],[-1,"//"],[0,"border:n"]],"start1":3507,"start2":3507,"length1":18,"length2":16}]],"length":4760,"saved":false}
