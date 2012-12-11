@@ -3,7 +3,12 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 8, ../sass/ie.scss */
+/* line 7, ../sass/ie.scss */
+html {
+  overflow: hidden;
+}
+
+/* line 11, ../sass/ie.scss */
 body {
   overflow: hidden;
 }

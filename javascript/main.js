@@ -168,8 +168,18 @@ var initUI = function(layers){
   }
   timeSlider.setThumbIndexes([5]);
 
+  if($.browser.msie && parseInt($.browser.version, 10) == 7) {
+    $("#map").append("<div id='timeDisplay'>2011</div>");
+  }
+
   dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
     timeSlider.pause();
+
+    if($.browser.msie && parseInt($.browser.version, 10) == 7) {
+      $("#timeDisplay").html(formatDate(timeExtent.endTime,'yyyy'));
+      $("#timeDisplay").css("left",($("#map").width() - $("#timeDisplay").width())/2);
+    }
+
     if($("#timeSliderPane").children("table").children("tbody").children("tr").children("td").length > 1){
       $("#timeSliderPane").children("table").children("tbody").children("tr").children("td").each(function(){
         if($(this).attr("id") !== "tsTmp"){
@@ -187,6 +197,13 @@ var initUI = function(layers){
 
   timeSlider.startup();
 
+};
+
+var formatDate = function(date,datePattern){
+  return dojo.date.locale.format(date, {
+    selector: 'date',
+    datePattern: datePattern
+  });
 };
 
 var switchToMainContent = function(){

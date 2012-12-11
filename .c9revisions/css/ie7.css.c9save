@@ -1,0 +1,3 @@
+{"ts":1355249530042,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1355251143179,"patch":[[{"diffs":[[1,"/* line 1, ../sass/ie7.scss */\n.dijitRuleMark {\n  border: 1px solid black;\n}\n"]],"start1":0,"start2":0,"length1":0,"length2":77}]],"length":77,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1355251890414,"patch":[[{"diffs":[[0,"ck;\n"],[1,"  margin: 0;\n}\n\n#timeDisplay{\n  position: absolute;\n  top: 20px;\n  padding: 10px;\n  background-color:#949494;\n  color:#ffffff;\n  font-family:Georgia, \"Times New Roman\", Times, serif;\n  z-index: 100;\n"],[0,"}"],[-1,"\n"]],"start1":71,"start2":71,"length1":6,"length2":204}]],"length":275,"saved":false}
