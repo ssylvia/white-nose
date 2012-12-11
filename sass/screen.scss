@@ -248,7 +248,11 @@ $san-serif:Arial, Helvetica, sans-serif;
 }
 
 #timeControls{
-  margin:15px;
+  margin:{
+    top:15px;
+    left:15px;
+    right:px;
+  }
     .time-control{
     vertical-align:top;
     padding:{
@@ -277,7 +281,7 @@ $san-serif:Arial, Helvetica, sans-serif;
     size:0.8em;
     weight:bold;
   }
-  border:none;
+  //border:none;
   margin:{
     top:18px;
     left:-14px;
@@ -291,6 +295,10 @@ $san-serif:Arial, Helvetica, sans-serif;
 
 .tundra .dijitSliderImageHandleH{
   outline:none;
+}
+
+#legend{
+  margin-left:15px;
 }
 
 #time-legend-pane{

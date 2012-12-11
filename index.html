@@ -4,6 +4,8 @@
 
     <link rel="shortcut icon" type="image/ico" href="http://www.arcgis.com/favicon.ico">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+
     <title>Millions of bats are dying from White-nose Syndrome</title>
 
     <!--STYLESHEETS-->
@@ -92,10 +94,12 @@
                 <td id="playButton" class="time-control"><img id="playPause" src="images/playControls/playDefault.png" alt="Play/Pause"></td>
                 <td id="slider-td"><span id="timeSliderPane" class="time-control"></span></td>
               </tr>
-              <tr>
-                <td id="time-legend-pane" colspan="2">Counties with <span id="confirmed-leg" class="legend-box"></span> confirmed and <span id="suspected-leg" class="legend-box"></span> suspected cases of white nose syndrome.</td>
-              </tr>
             </table><!--/timeControls-->
+            <table id="legend">
+              <tr>
+                <td id="time-legend-pane">Counties with <span id="confirmed-leg" class="legend-box"></span> confirmed and <span id="suspected-leg" class="legend-box"></span> suspected cases of white nose syndrome.</td>
+              </tr>
+            </table><!--/legend-->
           </div><!--/controlsPane-->
           <div id="map" dojotype="dijit.layout.ContentPane" region="center">
             <a href="http://www.batcon.org/" target="_blank" class="srcLink" title="Bat Conservation International"><img id="bciLogo" class="logoImg" src="images/BCI_logo.png" alt="Bat Conservation International"></a>

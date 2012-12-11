@@ -194,6 +194,7 @@ var switchToMainContent = function(){
   $(".tabs-active2").addClass("tabs-default2");
   $(".tabs-default2").removeClass("tabs-active2").removeClass("currentTab");
   $("#timeControls").show();
+  $("#legend").show();
   $("#pagcSource").show();
   $("#bciSource").hide();
   $("#batGallery").hide();
@@ -208,6 +209,7 @@ var switchToBatGallery = function(bat){
   $(".tabs-active1").addClass("tabs-default1");
   $(".tabs-default1").removeClass("tabs-active1").removeClass("currentTab");
   $("#timeControls").hide();
+  $("#legend").hide();
   $("#pagcSource").hide();
   $("#bciSource").show();
   $("#batGallery").show();
