@@ -148,6 +148,12 @@ $san-serif:Arial, Helvetica, sans-serif;
   }
 }
 
+.italics{
+  font:{
+    style:italic
+  }
+}
+
 .contentHeader, .speciesHeader, .contentImage, .contentText{
   margin:{
     bottom:25px;
@@ -185,6 +191,10 @@ $san-serif:Arial, Helvetica, sans-serif;
   color:$text-dark;
   font:{
     family:$serif;
+    size:0.968em;
+  }
+  line:{
+    height:1.1em;
   }
 }
 
@@ -272,6 +282,7 @@ $san-serif:Arial, Helvetica, sans-serif;
     top:18px;
     left:-14px;
   }
+  cursor:pointer;
 }
 
 .tundra .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper, .tundra .dijitSliderLeftBumper{

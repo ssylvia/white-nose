@@ -213,19 +213,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 151, ../sass/screen.scss */
+.italics {
+  font-style: italic;
+}
+
+/* line 157, ../sass/screen.scss */
 .contentHeader, .speciesHeader, .contentImage, .contentText {
   margin-bottom: 25px;
   font-size: 1em;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .contentHeader {
   color: #666666;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .speciesHeader {
   color: #444444;
   font-family: Arial, Helvetica, sans-serif;
@@ -234,18 +239,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top: 1px solid #666666;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .contentImage {
   width: 300px;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .contentText {
   color: #444444;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.968em;
+  line-height: 1.1em;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .readMore {
   color: #444444;
   font-family: Arial, Helvetica, sans-serif;
@@ -254,18 +261,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   cursor: pointer;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .readMore:hover {
   text-decoration: underline;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #sourcePane {
   width: 100%;
   height: 40px;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #sourcePane p, .srcLink {
   padding-top: 10px;
   text-align: center;
@@ -274,45 +281,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 12px;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #bciSource {
   display: none;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #controlsPane {
   background-color: #949494;
   width: 100%;
   height: 95px;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #timeControls {
   margin: 15px;
 }
-/* line 242, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #timeControls .time-control {
   vertical-align: top;
   padding-right: 15px;
   padding-left: 8px;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #slider-td {
   vertical-align: top;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #playButton {
   width: 35px;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #playPause {
   cursor: pointer;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .dijitRuleMark {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -321,19 +328,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: none;
   margin-top: 18px;
   margin-left: -14px;
+  cursor: pointer;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .tundra .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderProgressBarH, .tundra .dijitSliderFocused .dijitSliderLeftBumper, .tundra .dijitSliderLeftBumper {
   background: #ffffff;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .tundra .dijitSliderImageHandleH {
   outline: none;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #time-legend-pane {
   color: #444444;
   padding-top: 10px;
@@ -342,7 +350,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 1em;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .legend-box {
   display: inline-block;
   vertical-align: top;
@@ -350,19 +358,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 1em;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #confirmed-leg {
   background-color: #ee5959;
   border: 1px solid #f19374;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 #suspected-leg {
   background-color: #fbbd38;
   border: 1px solid #fae637;
 }
 
-/* line 318, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 #batGallery {
   margin-top: 12px;
   margin-right: auto;
@@ -371,12 +379,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   min-width: 80%;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .batGalleryPane {
   text-align: center;
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .batImg {
   margin-left: 2px;
   margin-right: 2px;
@@ -385,12 +393,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 2px solid #949494;
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .batImg:hover {
   border: 2px solid #fc0000;
 }
 
-/* line 348, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .logoImg {
   position: absolute;
   cursor: pointer;
@@ -399,12 +407,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   outline: none;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #pgcLogo {
   bottom: 44px;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 #bciLogo {
   bottom: 115px;
 }

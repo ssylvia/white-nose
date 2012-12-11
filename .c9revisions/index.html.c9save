@@ -475,3 +475,16 @@
 {"ts":1355175822130,"patch":[[{"diffs":[[0,"        "],[1,"<a href=\"http://www.portal.state.pa.us/portal/server.pt?open=514&objID=615025&mode=2\" target=\"_blank\" class=\"srcLink\">"],[0,"<img id="]],"start1":5668,"start2":5668,"length1":16,"length2":134}]],"length":6027,"saved":false}
 {"ts":1355175824412,"patch":[[{"diffs":[[0,"ission\">"],[1,"</a>"],[0,"\r\n      "]],"start1":5871,"start2":5871,"length1":16,"length2":20}]],"length":6031,"saved":false}
 {"ts":1355176014378,"patch":[[{"diffs":[[0,"mg\" src=\"images/"],[-1,"PGC"],[1,"BCI"],[0,"_logo.png\" alt=\""]],"start1":5591,"start2":5591,"length1":35,"length2":35}]],"length":6031,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355243860303,"patch":[[{"diffs":[[0," class=\"srcLink\""],[1," tit"],[0,"><img id=\"bciLog"]],"start1":5544,"start2":5544,"length1":32,"length2":36}]],"length":6035,"saved":false}
+{"ts":1355243861208,"patch":[[{"diffs":[[0,"ink\" tit"],[1,"le"],[0,"><img id"]],"start1":5556,"start2":5556,"length1":16,"length2":18}]],"length":6037,"saved":false}
+{"ts":1355243862363,"patch":[[{"diffs":[[0,"k\" title"],[1,"=\""],[0,"><img id"]],"start1":5558,"start2":5558,"length1":16,"length2":18}]],"length":6039,"saved":false}
+{"ts":1355243863340,"patch":[[{"diffs":[[0," title=\""],[1,"\""],[0,"><img id"]],"start1":5560,"start2":5560,"length1":16,"length2":17}]],"length":6040,"saved":false}
+{"ts":1355243864984,"patch":[[{"diffs":[[0," title=\""],[1,"Bat"],[0,"\"><img i"]],"start1":5560,"start2":5560,"length1":16,"length2":19}]],"length":6043,"saved":false}
+{"ts":1355243867494,"patch":[[{"diffs":[[0,"tle=\"Bat"],[1," Cons"],[0,"\"><img i"]],"start1":5563,"start2":5563,"length1":16,"length2":21}]],"length":6048,"saved":false}
+{"ts":1355243880829,"patch":[[{"diffs":[[0,"Bat Cons"],[1,"ervation International"],[0,"\"><img i"]],"start1":5568,"start2":5568,"length1":16,"length2":38}]],"length":6070,"saved":false}
+{"ts":1355243889409,"patch":[[{"diffs":[[0,"mission\""],[1," title=\"Bat Conservation International\""],[0,"></a>\r\n "]],"start1":5909,"start2":5909,"length1":16,"length2":55}]],"length":6109,"saved":false}
+{"ts":1355243895347,"patch":[[{"diffs":[[0,"le=\""],[-1,"Bat Conservation International"],[1,"Game Commission"],[0,"\"></"]],"start1":5921,"start2":5921,"length1":38,"length2":23}]],"length":6094,"saved":false}
+{"ts":1355243900581,"patch":[[{"diffs":[[0," title=\""],[1,"Pennsy"],[0,"Game Com"]],"start1":5917,"start2":5917,"length1":16,"length2":22}]],"length":6100,"saved":false}
+{"ts":1355243901354,"patch":[[{"diffs":[[0,"=\"Pennsy"],[1,"lva"],[0,"Game Com"]],"start1":5923,"start2":5923,"length1":16,"length2":19}]],"length":6103,"saved":false}
+{"ts":1355243902384,"patch":[[{"diffs":[[0,"ennsylva"],[1,"i"],[0,"Game Com"]],"start1":5926,"start2":5926,"length1":16,"length2":17}]],"length":6104,"saved":false}
+{"ts":1355243903745,"patch":[[{"diffs":[[0,"ennsylva"],[-1,"i"],[1,"nia "],[0,"Game Com"]],"start1":5926,"start2":5926,"length1":17,"length2":20}]],"length":6107,"saved":false}

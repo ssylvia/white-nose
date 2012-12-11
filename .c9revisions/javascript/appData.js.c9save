@@ -361,3 +361,37 @@
 {"ts":1354901326533,"patch":[[{"diffs":[[0,"sts."],[-1," And this relentless disease keeps spreading into new areas. BCI is working with agencies, organizations and individuals to understand and stop WNS and begin restoring these decimated bat populations."],[0,"<br>"]],"start1":641,"start2":641,"length1":208,"length2":8}]],"length":8673,"saved":false}
 {"ts":1354901342670,"patch":[[{"diffs":[[0,"logists."],[1," White-nose Syndrome has killed more than 5.7 million bats since it was discovered in a single New York cave in February 2006."],[0,"<br><br>"]],"start1":637,"start2":637,"length1":16,"length2":142}]],"length":8799,"saved":false}
 {"ts":1354901386928,"patch":[[{"diffs":[[0,"<br><br>"],[1,"Named for a cold-loving white fungus typically found on the faces and wings of infected bats, White-nose Syndrome causes bats to awaken more often during hibernation and use up the stored fat reserves that are needed to get them through the winter. Infected bats often emerge too soon from hibernation and are often seen flying around in midwinter. These bats usually freeze or starve to death."],[0,"\"\n  },\n "]],"start1":771,"start2":771,"length1":16,"length2":410}]],"length":9193,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355243005673,"patch":[[{"diffs":[[0,"g from white"],[-1," "],[0,"nose syndrom"]],"start1":107,"start2":107,"length1":25,"length2":24}]],"length":9192,"saved":false}
+{"ts":1355243006434,"patch":[[{"diffs":[[0,"om white"],[1,"-"],[0,"nose syn"]],"start1":111,"start2":111,"length1":16,"length2":17}]],"length":9193,"saved":false}
+{"ts":1355243015525,"patch":[[{"diffs":[[0,"of white"],[-1," "],[1,"-"],[0,"nose\",\n "]],"start1":308,"start2":308,"length1":17,"length2":17}]],"length":9193,"saved":false}
+{"ts":1355243248892,"patch":[[{"diffs":[[0,"ng from "],[-1,"w"],[1,"W"],[0,"hite-nos"]],"start1":106,"start2":106,"length1":17,"length2":17}]],"length":9193,"saved":false}
+{"ts":1355243482633,"patch":[[{"diffs":[[0,"te-nose "],[-1,"s"],[1,"S"],[0,"yndrome\""]],"start1":117,"start2":117,"length1":17,"length2":17}]],"length":9193,"saved":false}
+{"ts":1355243640940,"patch":[[{"diffs":[[0," myotis "],[-1,"("],[1,"<em"],[0,"formerly"]],"start1":5055,"start2":5055,"length1":17,"length2":19}]],"length":9195,"saved":false}
+{"ts":1355243641838,"patch":[[{"diffs":[[0,"otis <em"],[1,">"],[0,"formerly"]],"start1":5058,"start2":5058,"length1":16,"length2":17}]],"length":9196,"saved":false}
+{"ts":1355243645554,"patch":[[{"diffs":[[0,"s keenii"],[-1,")"],[1,"</em"],[0,", in par"]],"start1":5081,"start2":5081,"length1":17,"length2":20}]],"length":9199,"saved":false}
+{"ts":1355243646370,"patch":[[{"diffs":[[0,"enii</em"],[1,">"],[0,", in par"]],"start1":5085,"start2":5085,"length1":16,"length2":17}]],"length":9200,"saved":false}
+{"ts":1355243661458,"patch":[[{"diffs":[[0,"tis "],[-1,"<em>"],[1,"spa"],[0,"form"]],"start1":5059,"start2":5059,"length1":12,"length2":11}]],"length":9199,"saved":false}
+{"ts":1355243662550,"patch":[[{"diffs":[[0,"tis "],[-1,"spa"],[1,"<"],[0,"form"]],"start1":5059,"start2":5059,"length1":11,"length2":9}]],"length":9197,"saved":false}
+{"ts":1355243667010,"patch":[[{"diffs":[[0,"myotis <"],[1,"span"],[0,"formerly"]],"start1":5056,"start2":5056,"length1":16,"length2":20}]],"length":9201,"saved":false}
+{"ts":1355243668434,"patch":[[{"diffs":[[0,"is <span"],[1," cls"],[0,"formerly"]],"start1":5060,"start2":5060,"length1":16,"length2":20}]],"length":9205,"saved":false}
+{"ts":1355243669624,"patch":[[{"diffs":[[0,"<span cl"],[-1,"s"],[1,"ass="],[0,"formerly"]],"start1":5063,"start2":5063,"length1":17,"length2":20}]],"length":9208,"saved":false}
+{"ts":1355243671013,"patch":[[{"diffs":[[0,"n class="],[1,"'"],[0,"formerly"]],"start1":5067,"start2":5067,"length1":16,"length2":17}]],"length":9209,"saved":false}
+{"ts":1355243672695,"patch":[[{"diffs":[[0," class='"],[1,"ital"],[0,"formerly"]],"start1":5068,"start2":5068,"length1":16,"length2":20}]],"length":9213,"saved":false}
+{"ts":1355243674039,"patch":[[{"diffs":[[0,"ss='ital"],[1,"ics'"],[0,"formerly"]],"start1":5072,"start2":5072,"length1":16,"length2":20}]],"length":9217,"saved":false}
+{"ts":1355243676060,"patch":[[{"diffs":[[0,"italics'"],[1,">"],[0,"formerly"]],"start1":5076,"start2":5076,"length1":16,"length2":17}]],"length":9218,"saved":false}
+{"ts":1355243678929,"patch":[[{"diffs":[[0,"keenii</"],[-1,"em"],[1,"spand"],[0,">, in pa"]],"start1":5101,"start2":5101,"length1":18,"length2":21}]],"length":9221,"saved":false}
+{"ts":1355243679525,"patch":[[{"diffs":[[0,"ii</span"],[-1,"d"],[0,">, in pa"]],"start1":5105,"start2":5105,"length1":17,"length2":16}]],"length":9220,"saved":false}
+{"ts":1355243799693,"patch":[[{"diffs":[[0,"rica"],[-1," – "],[0,"from"]],"start1":8176,"start2":8176,"length1":11,"length2":8}]],"length":9217,"saved":false}
+{"ts":1355243802579,"patch":[[{"diffs":[[0," America"],[1," - "],[0,"from Nov"]],"start1":8172,"start2":8172,"length1":16,"length2":19}]],"length":9220,"saved":false}
+{"ts":1355244127055,"patch":[[{"diffs":[[0,"tis "],[-1,"<span class='italics'>"],[0,"form"]],"start1":5059,"start2":5059,"length1":30,"length2":8}]],"length":9198,"saved":false}
+{"ts":1355244129980,"patch":[[{"diffs":[[0,"ormerly "],[1,"<span class='italics'>"],[0,"Myotis k"]],"start1":5064,"start2":5064,"length1":16,"length2":38}]],"length":9220,"saved":false}
+{"ts":1355244164422,"patch":[[{"diffs":[[0," myotis "],[-1,"("],[0,"Myotis l"]],"start1":5660,"start2":5660,"length1":17,"length2":16}]],"length":9219,"saved":false}
+{"ts":1355244166330,"patch":[[{"diffs":[[0," myotis "],[1,"("],[0,"Myotis l"]],"start1":5660,"start2":5660,"length1":16,"length2":17}]],"length":9220,"saved":false}
+{"ts":1355244276838,"patch":[[{"diffs":[[0,"red bat "],[-1,"("],[0,"formerly"]],"start1":8039,"start2":8039,"length1":17,"length2":16}]],"length":9219,"saved":false}
+{"ts":1355244280679,"patch":[[{"diffs":[[0,"rly "],[-1,"known as the "],[0,"east"]],"start1":8052,"start2":8052,"length1":21,"length2":8}]],"length":9206,"saved":false}
+{"ts":1355244281722,"patch":[[{"diffs":[[0,"ormerly "],[1,"<span class='italics'>"],[0,"eastern "]],"start1":8048,"start2":8048,"length1":16,"length2":38}]],"length":9228,"saved":false}
+{"ts":1355244284722,"patch":[[{"diffs":[[0,"istrelle"],[-1,")"],[1,"<"],[0," is one "]],"start1":8089,"start2":8089,"length1":17,"length2":17}]],"length":9228,"saved":false}
+{"ts":1355244285270,"patch":[[{"diffs":[[0,"strelle<"],[1,"."],[0," is one "]],"start1":8090,"start2":8090,"length1":16,"length2":17}]],"length":9229,"saved":false}
+{"ts":1355244289369,"patch":[[{"diffs":[[0,"trelle<."],[1,"span"],[0," is one "]],"start1":8091,"start2":8091,"length1":16,"length2":20}]],"length":9233,"saved":false}
+{"ts":1355244290504,"patch":[[{"diffs":[[0,"le<.span"],[1,">"],[0," is one "]],"start1":8095,"start2":8095,"length1":16,"length2":17}]],"length":9234,"saved":false}
+{"ts":1355244330992,"patch":[[{"diffs":[[0,"strelle<"],[-1,"."],[1,"/"],[0,"span> is"]],"start1":8090,"start2":8090,"length1":17,"length2":17}]],"length":9234,"saved":false}

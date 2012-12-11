@@ -166,6 +166,7 @@ var initUI = function(layers){
   else{
     timeSlider.createTimeStopsByTimeInterval(fullTimeExtent,timeProperties.timeStopInterval.interval,timeProperties.timeStopInterval.units);
   }
+  timeSlider.setThumbIndexes([5]);
 
   dojo.connect(timeSlider,'onTimeExtentChange',function(timeExtent){
     timeSlider.pause();
@@ -179,6 +180,7 @@ var initUI = function(layers){
     if($(".dijitRuleMark").first().html() === ""){
       $(".dijitRuleMark").each(function(i){
         $(this).html(2006+i);
+        $(this).attr("onclick","timeSlider.setThumbIndexes(["+i+"]);")
       });
     }
   });
@@ -197,7 +199,7 @@ var switchToMainContent = function(){
   $("#batGallery").hide();
   $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"<br><br><span class='readMore' onclick='switchToBatGallery("+currentBat+")'>VIEW AFFECTED SPECIES &gt;&gt;</span></p></div>");
   startFade(getLayerByName(map,["time","backgroundcounties"]));
-  map.setExtent(initExtent,true);
+  //map.setExtent(initExtent,true);
 };
 
 var switchToBatGallery = function(bat){
@@ -231,8 +233,7 @@ var switchToBatGallery = function(bat){
   }
   $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
   startFade(getLayerByName(map,[appData.batContent[bat].species,"cache","backgroundcounties"]));
-  map.setExtent(new esri.geometry.Extent({"xmin":-18935309.017567962,"ymin":-363864.36916996073,"xmax":-6235755.390159027
-,"ymax":10359333.454897985, "spatialReference":{"wkid":102100}}),true);
+  //map.setExtent(new esri.geometry.Extent({"xmin":-18935309.017567962,"ymin":-363864.36916996073,"xmax":-6235755.390159027,"ymax":10359333.454897985, "spatialReference":{"wkid":102100}}),true);
   //map.setExtent(getLayerByName(map,appData.batContent[bat].species)[0].fullExtent,true);
   $(".batImg").css("border-color","#949494").removeClass("currentImg");
   $("#batImg"+bat).css("border-color","#FC0000").addClass("currentImg");

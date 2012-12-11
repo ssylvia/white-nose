@@ -1,10 +1,10 @@
 window.appData = {
 
   "webmap" : "9629c5f58dc5418788bb96cb9c82321d",
-  "title" : "Millions of bats are dying from white nose syndrome",
+  "title" : "Millions of bats are dying from White-nose Syndrome",
   "subtitle" : "As the disease rapidly spreads across North America, more and more populations are threatened.",
   "mainContent" : {
-    "heading" : "The spreading scourge of white nose",
+    "heading" : "The spreading scourge of white-nose",
     "imageURL" : "http://farm3.staticflickr.com/2591/5765048289_ff101828c9_n.jpg",
     "text" : "White-nose Syndrome has devastated bat populations across the eastern United States during the past five years, causing \"the most precipitous wildlife decline in the past century in North America,\" according to biologists. White-nose Syndrome has killed more than 5.7 million bats since it was discovered in a single New York cave in February 2006.<br><br>Named for a cold-loving white fungus typically found on the faces and wings of infected bats, White-nose Syndrome causes bats to awaken more often during hibernation and use up the stored fat reserves that are needed to get them through the winter. Infected bats often emerge too soon from hibernation and are often seen flying around in midwinter. These bats usually freeze or starve to death."
   },
@@ -38,7 +38,7 @@ window.appData = {
       "commonName" : "Northern Myotis",
       "imageURL" : "http://www.batcon.org/images/SP/8286218.jpg",
       "linkURL" : "http://www.batcon.org/index.php/all-about-bats/species-profiles.html?task=detail&species=2306",
-      "text" : "The Northern myotis (formerly Myotis keenii), in part is widely distributed across eastern North America from Manitoba across southern Canada to Newfoundland, south to northern Florida, west through the south central states and northwest to the Dakotas. It is found in dense forest stands and chooses maternity roosts beneath exfoliating bark and in tree cavities, much like the Indiana myotis. And, like the Indiana myotis, the Northern myotis relies upon caves and underground mines for hibernation sites, where it typically chooses cooler sites than eastern pipistrelles and little brown myotis (Myotis lucifugus)."
+      "text" : "The Northern myotis formerly <span class='italics'>Myotis keenii</span>, in part is widely distributed across eastern North America from Manitoba across southern Canada to Newfoundland, south to northern Florida, west through the south central states and northwest to the Dakotas. It is found in dense forest stands and chooses maternity roosts beneath exfoliating bark and in tree cavities, much like the Indiana myotis. And, like the Indiana myotis, the Northern myotis relies upon caves and underground mines for hibernation sites, where it typically chooses cooler sites than eastern pipistrelles and little brown myotis (Myotis lucifugus)."
     },{
       "species" : "14136",
       "commonName" : "Indiana Myotis",
@@ -56,7 +56,7 @@ window.appData = {
       "commonName" : "Tri-Colored Bat",
       "imageURL" : "http://www.batcon.org/vrcdb/adhour/images//8300000/8322109.jpg",
       "linkURL" : "http://www.batcon.org/index.php/all-about-bats/species-profiles.html?task=detail&species=2345",
-      "text" : "The tri-colored bat (formerly known as the eastern pipistrelle) is one of the most common species of bats found throughout the eastern forests of America – from Nova Scotia and Quebec, south throughout the east coast of Mexico into northern Central America. But, surprisingly little is known about its daytime summer or maternity roosts. These bats are among the first bats to emerge at dusk each night, and their appearance at tree-top level indicates that they may roost in foliage or in high tree cavities and crevices."
+      "text" : "The tri-colored bat formerly <span class='italics'>eastern pipistrelle</span> is one of the most common species of bats found throughout the eastern forests of America - from Nova Scotia and Quebec, south throughout the east coast of Mexico into northern Central America. But, surprisingly little is known about its daytime summer or maternity roosts. These bats are among the first bats to emerge at dusk each night, and their appearance at tree-top level indicates that they may roost in foliage or in high tree cavities and crevices."
     },{
       "species" : "14132",
       "commonName" : "Gray Myotis",
