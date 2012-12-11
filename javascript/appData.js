@@ -38,7 +38,7 @@ window.appData = {
       "commonName" : "Northern Myotis",
       "imageURL" : "http://www.batcon.org/images/SP/8286218.jpg",
       "linkURL" : "http://www.batcon.org/index.php/all-about-bats/species-profiles.html?task=detail&species=2306",
-      "text" : "The Northern myotis formerly <span class='italics'>Myotis keenii</span>, in part is widely distributed across eastern North America from Manitoba across southern Canada to Newfoundland, south to northern Florida, west through the south central states and northwest to the Dakotas. It is found in dense forest stands and chooses maternity roosts beneath exfoliating bark and in tree cavities, much like the Indiana myotis. And, like the Indiana myotis, the Northern myotis relies upon caves and underground mines for hibernation sites, where it typically chooses cooler sites than eastern pipistrelles and little brown myotis (Myotis lucifugus)."
+      "text" : "The Northern myotis, formerly <span class='italics'>Myotis keenii</span>, in part is widely distributed across eastern North America from Manitoba across southern Canada to Newfoundland, south to northern Florida, west through the south central states and northwest to the Dakotas. It is found in dense forest stands and chooses maternity roosts beneath exfoliating bark and in tree cavities, much like the Indiana myotis. And, like the Indiana myotis, the Northern myotis relies upon caves and underground mines for hibernation sites, where it typically chooses cooler sites than eastern pipistrelles and little brown myotis <span class='italics'>Myotis lucifugus</span>."
     },{
       "species" : "14136",
       "commonName" : "Indiana Myotis",
@@ -56,7 +56,7 @@ window.appData = {
       "commonName" : "Tri-Colored Bat",
       "imageURL" : "http://www.batcon.org/vrcdb/adhour/images//8300000/8322109.jpg",
       "linkURL" : "http://www.batcon.org/index.php/all-about-bats/species-profiles.html?task=detail&species=2345",
-      "text" : "The tri-colored bat formerly <span class='italics'>eastern pipistrelle</span> is one of the most common species of bats found throughout the eastern forests of America - from Nova Scotia and Quebec, south throughout the east coast of Mexico into northern Central America. But, surprisingly little is known about its daytime summer or maternity roosts. These bats are among the first bats to emerge at dusk each night, and their appearance at tree-top level indicates that they may roost in foliage or in high tree cavities and crevices."
+      "text" : "The tri-colored bat, formerly eastern pipistrelle, is one of the most common species of bats found throughout the eastern forests of America - from Nova Scotia and Quebec, south throughout the east coast of Mexico into northern Central America. But, surprisingly little is known about its daytime summer or maternity roosts. These bats are among the first bats to emerge at dusk each night, and their appearance at tree-top level indicates that they may roost in foliage or in high tree cavities and crevices."
     },{
       "species" : "14132",
       "commonName" : "Gray Myotis",

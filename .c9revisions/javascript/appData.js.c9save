@@ -395,3 +395,10 @@
 {"ts":1355244289369,"patch":[[{"diffs":[[0,"trelle<."],[1,"span"],[0," is one "]],"start1":8091,"start2":8091,"length1":16,"length2":20}]],"length":9233,"saved":false}
 {"ts":1355244290504,"patch":[[{"diffs":[[0,"le<.span"],[1,">"],[0," is one "]],"start1":8095,"start2":8095,"length1":16,"length2":17}]],"length":9234,"saved":false}
 {"ts":1355244330992,"patch":[[{"diffs":[[0,"strelle<"],[-1,"."],[1,"/"],[0,"span> is"]],"start1":8090,"start2":8090,"length1":17,"length2":17}]],"length":9234,"saved":false}
+{"ts":1355245064951,"patch":[[{"diffs":[[0," myotis "],[-1,"("],[1,"<span class='italics'>"],[0,"Myotis l"]],"start1":5660,"start2":5660,"length1":17,"length2":38}]],"length":9255,"saved":false}
+{"ts":1355245067911,"patch":[[{"diffs":[[0,"ucifugus"],[-1,")"],[0,".\"\n    }"]],"start1":5698,"start2":5698,"length1":17,"length2":16}]],"length":9254,"saved":false}
+{"ts":1355245070921,"patch":[[{"diffs":[[0,"ucifugus"],[1,"</span>"],[0,".\"\n    }"]],"start1":5698,"start2":5698,"length1":16,"length2":23}]],"length":9261,"saved":false}
+{"ts":1355245118969,"patch":[[{"diffs":[[0,"ormerly "],[-1,"<span class='italics'>"],[0,"eastern "]],"start1":8075,"start2":8075,"length1":38,"length2":16}]],"length":9239,"saved":false}
+{"ts":1355245123564,"patch":[[{"diffs":[[0,"ored bat"],[1,","],[0," formerl"]],"start1":8065,"start2":8065,"length1":16,"length2":17}]],"length":9240,"saved":false}
+{"ts":1355245126359,"patch":[[{"diffs":[[0,"istrelle"],[-1,"</span>"],[1,","],[0," is one "]],"start1":8095,"start2":8095,"length1":23,"length2":17}]],"length":9234,"saved":false}
+{"ts":1355245209426,"patch":[[{"diffs":[[0,"thern myotis"],[1,","],[0," formerly <s"]],"start1":5050,"start2":5050,"length1":24,"length2":25}]],"length":9235,"saved":false}

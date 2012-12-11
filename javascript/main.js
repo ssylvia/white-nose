@@ -84,7 +84,7 @@ dojo.addOnLoad(function(){
 
 var createMap = function(){
 
-  window.initExtent = new esri.geometry.Extent({"xmin":-11097584.926455263,"ymin":4078383.4864549944,"xmax":-6890490.889640282,"ymax":6382501.267082735, "spatialReference":{"wkid":102100}});
+  window.initExtent = new esri.geometry.Extent({"xmin":-10909244.175728686,"ymin":3322571.907834641,"xmax":-6359712.252196205,"ymax":7006225.174952875, "spatialReference":{"wkid":102100}});
 
   var lods = [
     {"level" : 0, "resolution" : 19567.8792409999, "scale" : 7.3957190948944E7},

@@ -488,3 +488,11 @@
 {"ts":1355243901354,"patch":[[{"diffs":[[0,"=\"Pennsy"],[1,"lva"],[0,"Game Com"]],"start1":5923,"start2":5923,"length1":16,"length2":19}]],"length":6103,"saved":false}
 {"ts":1355243902384,"patch":[[{"diffs":[[0,"ennsylva"],[1,"i"],[0,"Game Com"]],"start1":5926,"start2":5926,"length1":16,"length2":17}]],"length":6104,"saved":false}
 {"ts":1355243903745,"patch":[[{"diffs":[[0,"ennsylva"],[-1,"i"],[1,"nia "],[0,"Game Com"]],"start1":5926,"start2":5926,"length1":17,"length2":20}]],"length":6107,"saved":false}
+{"ts":1355245339824,"patch":[[{"diffs":[[0,"tle>"],[-1,"White nose syndrome - A story map presented by Esri"],[1,"Millions of bats are dying from White-nose Syndrome"],[0,"</ti"]],"start1":223,"start2":223,"length1":59,"length2":59}]],"length":6107,"saved":false}
+{"ts":1355245373544,"patch":[[{"diffs":[[0,"twitter'"],[1," st"],[0," st_via="]],"start1":3262,"start2":3262,"length1":16,"length2":19}]],"length":6110,"saved":false}
+{"ts":1355245376377,"patch":[[{"diffs":[[0,"tter' st"],[1,"_title"],[0," st_via="]],"start1":3265,"start2":3265,"length1":16,"length2":22}]],"length":6116,"saved":false}
+{"ts":1355245377405,"patch":[[{"diffs":[[0,"st_title"],[1,"="],[0," st_via="]],"start1":3271,"start2":3271,"length1":16,"length2":17}]],"length":6117,"saved":false}
+{"ts":1355245378596,"patch":[[{"diffs":[[0,"t_title="],[1,"\"\""],[0," st_via="]],"start1":3272,"start2":3272,"length1":16,"length2":18}]],"length":6119,"saved":false}
+{"ts":1355245380574,"patch":[[{"diffs":[[0,"tle="],[-1,"\"\""],[1,"''"],[0," st_"]],"start1":3276,"start2":3276,"length1":10,"length2":10}]],"length":6119,"saved":false}
+{"ts":1355245381995,"patch":[[{"diffs":[[0,"_title='"],[1,"Millions of bats are dying from White-nose Syndrome"],[0,"' st_via"]],"start1":3273,"start2":3273,"length1":16,"length2":67}]],"length":6170,"saved":false}
+{"ts":1355245455631,"patch":[[{"diffs":[[0,"undra\">\r"],[1,"\n  <img src=\"images/thumbnail.png\" alt=\"thumbnail\" style=\"position:absolute;width:1px;height:1px;left:-1px;top:-1px;\">\r"],[0,"\n\r\n    <"]],"start1":2459,"start2":2459,"length1":16,"length2":135}]],"length":6289,"saved":false}
