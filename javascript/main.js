@@ -215,7 +215,7 @@ var switchToMainContent = function(){
   $("#pagcSource").show();
   $("#bciSource").hide();
   $("#batGallery").hide();
-  $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"<br><br><span class='readMore' onclick='switchToBatGallery("+currentBat+")'>VIEW AFFECTED SPECIES &gt;&gt;</span></p></div>");
+  $("#sidePaneContent").html("").append("<div id='mainContent' class='description'><h3 id='mainContentHeader' class='contentHeader'>"+appData.mainContent.heading+"</h3><img id='mainContentImage' class='contentImage' src='"+appData.mainContent.imageURL+"'><p class='creditText'>© Ryan Von Linden, <a href='http://www.dec.ny.gov/' target='_blank' class='imgCreditLink' title='New York State Department of Environmental Conservation'>New York DEC</a></p><p id='mainContentText' class='contentText'>"+appData.mainContent.text+"<br><br><span class='readMore' onclick='switchToBatGallery("+currentBat+")'>VIEW AFFECTED SPECIES &gt;&gt;</span></p></div>");
   startFade(getLayerByName(map,["time","backgroundcounties"]));
   //map.setExtent(initExtent,true);
 };
