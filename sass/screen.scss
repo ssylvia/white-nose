@@ -189,19 +189,18 @@ $san-serif:Arial, Helvetica, sans-serif;
 
 .creditText{
   margin:{
-    top:-40px;
-    left:5px;
-    bottom:25px;
+    top:-20px;
+    bottom:20px;
   }
-  color:$text-light;
+  color:$text-mid-dark;
   font:{
     family:$san-serif;
-    size:12px;
+    size:11px;
   }
 }
 
 .imgCreditLink{
-  color:$text-light;
+  color:$text-mid-dark;
 }
 
 .contentText{
