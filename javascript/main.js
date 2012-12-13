@@ -11,6 +11,7 @@ window.currentBat = 0;
 window.isPlaying = false;
 
 $(window).resize(function(){
+  $("#loader").css("left",($(window).width() - 30)/2).css("top",($(window).height() - 30)/2);
   if($(window).width() <= 1250){
     $("#time-legend-pane").css("padding-left","5px");
     if(navigator.userAgent.match(/iPad/i) === null){
@@ -28,6 +29,8 @@ $(document).ready(function(){
   //Initial layout configuration
   $("#title").html(appData.title);
   $("#subtitle").html(appData.subtitle);
+
+  $("#loader").css("left",($(window).width() - 30)/2).css("top",($(window).height() - 30)/2);
 
   if($(window).width() <= 1250){
     $("#time-legend-pane").css("padding-left","5px");
@@ -113,6 +116,7 @@ var createMap = function(){
 
     dojo.connect(map,"onUpdateEnd",function(){
       playAnimation();
+       $("#loader").fadeOut();
 	});
 
     //add the legend

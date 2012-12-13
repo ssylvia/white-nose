@@ -24,6 +24,13 @@ $text-light:#ffffff;
 $serif:Georgia, "Times New Roman", Times, serif;
 $san-serif:Arial, Helvetica, sans-serif;
 
+#loader{
+  position:absolute;
+  top:48%;
+  left:48%;
+  z-index:100;
+}
+
 #mainWindow{
   position:absolute;
   height:100%;
