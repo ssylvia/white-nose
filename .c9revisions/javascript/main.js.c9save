@@ -2092,3 +2092,19 @@
 {"ts":1355253136993,"patch":[[{"diffs":[[0,"tml("],[-1,"timeSlider.thumbIndexes[0]+2006"],[1,"formatDate(timeExtent.endTime,datePattern);"],[0,");\n "]],"start1":5185,"start2":5185,"length1":39,"length2":51}]],"length":11971,"saved":false}
 {"ts":1355253138818,"patch":[[{"diffs":[[0,"Pattern)"],[-1,";"],[0,");\n     "]],"start1":5223,"start2":5223,"length1":17,"length2":16}]],"length":11970,"saved":false}
 {"ts":1355253156095,"patch":[[{"diffs":[[0,"endTime,"],[-1,"datePattern"],[1,"'yyyy'"],[0,"));\n    "]],"start1":5211,"start2":5211,"length1":27,"length2":22}]],"length":11965,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1355415013565,"patch":[[{"diffs":[[0,"nkURL+\"'"],[1," target='_blank'>READ MORE &gt;&gt;</a></p><p class='contentText'>\"+appData.batContent[bat].text+\"<br><br><a class='readMore' href='\"+appData.batContent[bat].linkURL+\"'"],[0," target="]],"start1":8609,"start2":8609,"length1":16,"length2":184}]],"length":12133,"saved":false}
+{"ts":1355415027203,"patch":[[{"diffs":[[0,"xt'>"],[-1,"\"+appData.batContent[bat].text+\"<br><br><a class='readMore' href='\"+appData.batContent[bat].linkURL+\"' target='_blank'>READ MORE &gt;&gt;</a>"],[0,"</p>"]],"start1":8511,"start2":8511,"length1":149,"length2":8}]],"length":11992,"saved":false}
+{"ts":1355415034142,"patch":[[{"diffs":[[0,"><p class='c"],[-1,"onten"],[1,"redi"],[0,"tText'></p><"]],"start1":8491,"start2":8491,"length1":29,"length2":28}]],"length":11991,"saved":false}
+{"ts":1355415071382,"patch":[[{"diffs":[[0,"itText'>"],[1,"© Merlin D. Tuttle, Bat Conservation International"],[0,"</p><p c"]],"start1":8506,"start2":8506,"length1":16,"length2":66}]],"length":12041,"saved":false}
+{"ts":1355415113815,"patch":[[{"diffs":[[0,"Tuttle, "],[1,"<a href=\"http://www.batcon.org/\" target=\"_blank\" class=\"srcLink\" title=\"Bat Conservation International\">"],[0,"Bat Cons"]],"start1":8526,"start2":8526,"length1":16,"length2":120}]],"length":12145,"saved":false}
+{"ts":1355415117192,"patch":[[{"diffs":[[0,"<a href="],[-1,"\""],[1,"'"],[0,"http://w"]],"start1":8534,"start2":8534,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415120330,"patch":[[{"diffs":[[0,"con.org/"],[-1,"\""],[1,"'"],[0," target="]],"start1":8557,"start2":8557,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415122241,"patch":[[{"diffs":[[0," target="],[-1,"\""],[1,"'"],[0,"_blank\" "]],"start1":8566,"start2":8566,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415124146,"patch":[[{"diffs":[[0,"='_blank"],[-1,"\""],[1,"'"],[0," class=\""]],"start1":8573,"start2":8573,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415126049,"patch":[[{"diffs":[[0,"' class="],[-1,"\""],[1,"'"],[0,"srcLink\""]],"start1":8581,"start2":8581,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415127944,"patch":[[{"diffs":[[0,"'srcLink"],[-1,"\""],[1,"'"],[0," title=\""]],"start1":8589,"start2":8589,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415130648,"patch":[[{"diffs":[[0,"' title="],[-1,"\""],[1,"'"],[0,"Bat Cons"]],"start1":8597,"start2":8597,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415133219,"patch":[[{"diffs":[[0,"national"],[-1,"\""],[1,"'"],[0,">Bat Con"]],"start1":8628,"start2":8628,"length1":17,"length2":17}]],"length":12145,"saved":false}
+{"ts":1355415139051,"patch":[[{"diffs":[[0," class='"],[-1,"src"],[1,"imgCredit"],[0,"Link' ti"]],"start1":8582,"start2":8582,"length1":19,"length2":25}]],"length":12151,"saved":false}
+{"ts":1355415151973,"patch":[[{"diffs":[[0,"tional</"],[1,"a</"],[0,"p><p cla"]],"start1":8668,"start2":8668,"length1":16,"length2":19}]],"length":12154,"saved":false}
+{"ts":1355415153907,"patch":[[{"diffs":[[0,"ional</a"],[1,">"],[0,"</p><p c"]],"start1":8669,"start2":8669,"length1":16,"length2":17}]],"length":12155,"saved":false}

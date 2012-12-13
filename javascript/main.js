@@ -250,7 +250,7 @@ var switchToBatGallery = function(bat){
       });
     }
   }
-  $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
+  $("#sidePaneContent").html("").append("<div class='description'><h3 class='contentHeader'>A gallery of threatened bats</h3><h4 class='speciesHeader'>"+appData.batContent[bat].commonName+"</h4><img class='contentImage' src='"+appData.batContent[bat].imageURL+"'><p class='creditText'>© Merlin D. Tuttle, <a href='http://www.batcon.org/' target='_blank' class='imgCreditLink' title='Bat Conservation International'>Bat Conservation International</a></p><p class='contentText'>"+appData.batContent[bat].text+"<br><br><a class='readMore' href='"+appData.batContent[bat].linkURL+"' target='_blank'>READ MORE &gt;&gt;</a></p></div>");;
   startFade(getLayerByName(map,[appData.batContent[bat].species,"cache","backgroundcounties"]));
   //map.setExtent(new esri.geometry.Extent({"xmin":-18935309.017567962,"ymin":-363864.36916996073,"xmax":-6235755.390159027,"ymax":10359333.454897985, "spatialReference":{"wkid":102100}}),true);
   //map.setExtent(getLayerByName(map,appData.batContent[bat].species)[0].fullExtent,true);

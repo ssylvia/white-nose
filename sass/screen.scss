@@ -187,6 +187,23 @@ $san-serif:Arial, Helvetica, sans-serif;
   width:300px;
 }
 
+.creditText{
+  margin:{
+    top:-40px;
+    left:5px;
+    bottom:25px;
+  }
+  color:$text-light;
+  font:{
+    family:$san-serif;
+    size:12px;
+  }
+}
+
+.imgCreditLink{
+  color:$text-light;
+}
+
 .contentText{
   color:$text-dark;
   font:{
