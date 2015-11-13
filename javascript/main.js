@@ -150,7 +150,7 @@ var initUI = function(layers){
   });
 
   //Add timeslider
-  var startTime = timeProperties.startTime + 31536000000;
+  var startTime = timeProperties.startTime;
   var endTime = timeProperties.endTime;
   var fullTimeExtent = new esri.TimeExtent(new Date(startTime), new Date(endTime));
 
@@ -170,7 +170,11 @@ var initUI = function(layers){
   else{
     timeSlider.createTimeStopsByTimeInterval(fullTimeExtent,timeProperties.timeStopInterval.interval,timeProperties.timeStopInterval.units);
   }
-  timeSlider.setThumbIndexes([5]);
+  // Hack to remove extra time stop start
+  timeSlider.timeStops.shift();
+  timeSlider.setTimeStops(timeSlider.timeStops);
+  // Hack to remove extra time stop end
+  timeSlider.setThumbIndexes([timeSlider.timeStops.length - 1]);
 
   if($.browser.msie && parseInt($.browser.version, 10) == 7) {
     $("#map").append("<div id='timeDisplay'>2011</div>");
