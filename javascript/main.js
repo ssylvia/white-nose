@@ -150,7 +150,7 @@ var initUI = function(layers){
   });
 
   //Add timeslider
-  var startTime = timeProperties.startTime - 31536000000;
+  var startTime = timeProperties.startTime - 8640000000;
   var endTime = timeProperties.endTime;
   var fullTimeExtent = new esri.TimeExtent(new Date(startTime), new Date(endTime));
 
